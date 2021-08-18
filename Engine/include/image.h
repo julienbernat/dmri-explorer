@@ -6,8 +6,9 @@
 #include <glm/glm.hpp>
 #include "nifti1_io.h"
 
-namespace Image
+namespace Slicer
 {
+/// Enumeration describing possible data types for nifti images.
 enum class DataType
 {
     unknown = DT_UNKNOWN,
@@ -30,50 +31,63 @@ enum class DataType
     rgba32 = DT_RGBA32
 };
 
+/// Class wrapping a nifti_image object.
 class NiftiImageWrapper
 {
 public:
+    /// Default constructor.
+    NiftiImageWrapper();
+
+    /// Constructor
+    /// \param[in] path Path to file.
     NiftiImageWrapper(const std::string& path);
+
+    /// Destructor.
     ~NiftiImageWrapper();
+
+    /// Get reference to nifti_image instance.
+    /// \return Pointer to nifti_image.
     std::shared_ptr<nifti_image> getNiftiImage() const;
 
+    /// Get data type of image.
+    /// \return Data type.
     DataType dtype() const;
-    glm::vec<4, int> dims() const;
+
+    /// Get image dimensions.
+    /// \return Image dimensions.
+    glm::ivec4 dims() const;
+
+    /// Get the total number of scalar values.
+    /// \return Length of the image.
     uint length() const;
+
+    /// Get the number of voxels in the image.
+    /// \return Number of voxels.
     uint nbVox() const;
+
+    /// Convert a flat index to 3D voxel index.
+    /// \return 3D index.
     glm::vec<3, uint> unravelIndex3d(size_t flatIndex) const;
+
+    /// Convert a 4D index to a 1D flat index.
+    /// \return 1D flat index.
     size_t flattenIndex(uint i, uint j, uint k, uint l) const;
 
-    // pixel values getters
+    /// Get pixel value at voxel coordinate (i, j, k, l).
+    /// \return Value at voxel coordinate as double.
     double at(uint i, uint j, uint k, uint l) const;
 
-    template<typename T> std::vector<T*> at(uint i, uint j, uint k) const
-    {
-        std::vector<T*> voxChannels;
-        voxChannels.resize(mDims.w);
-        for(uint l = 0; l < mDims.w; ++l)
-        {
-            voxChannels[l] = this->at<T>(i, j, k, l);
-        }
-        return voxChannels;
-    };
-
-    template<typename T> T* at(uint i, uint j, uint k, uint l) const
-    {
-        const uint flatIndex = flattenIndex(i, j, k, l);
-
-        if(flatIndex > mLength - 1)
-        {
-            throw std::runtime_error("Index is out of bound for image.");
-        }
-
-        T* v = &((T*)(mData->data))[flatIndex];
-        return v;
-    };
 private:
-    std::shared_ptr<nifti_image> mData;
-    glm::vec<4, int> mDims;
+    /// Reference to the loaded image.
+    std::shared_ptr<nifti_image> mImage;
+
+    /// Dimensions of the image.
+    glm::ivec4 mDims;
+
+    /// Total number of voxels.
     uint mNbVox;
+
+    /// Length of the image (number of scalar values).
     uint mLength;
 };
-} // Image
+} // namespace Slicer

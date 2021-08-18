@@ -1,44 +1,87 @@
 #pragma once
 
 #include <glm/glm.hpp>
-#include <data.h>
+#include <shader_data.h>
 #include <memory>
-#include <spherical_coordinates.h>
+#include <coordinate_system.h>
+#include <application_state.h>
 
-namespace Engine
+namespace Slicer
 {
-namespace Scene
-{
+/// Class for camera object.
 class Camera
 {
 public:
+    /// Default constructor.
     Camera() = default;
-    Camera(const Math::Coordinate::Spherical& position,
-           const Math::Coordinate::Spherical& upVector,
-           const glm::vec3& center,
-           const float& fov, const float& aspect,
-           const float& near, const float& far);
-    void Resize(const float& aspect);
-    void Zoom(double delta);
-    void RotateAroundCenter(double dPhi, double dTheta);
-    void Translate(double dx, double dy);
-private:
-    glm::vec3 convertToCartesian(const Math::Coordinate::Spherical& coords) const;
-    glm::vec3 getPosition(const Math::Coordinate::Spherical& coords) const;
-    glm::vec3 getDirection(const Math::Coordinate::Spherical& coords) const;
-    void updateCamParams();
 
-    glm::vec3 mCenter;
+    /// Constructor.
+    /// \param[in] position Starting position in world coordinates.
+    /// \param[in] upVector Up vector in world coordinates.
+    /// \param[in] lookAt Point in center of view.
+    /// \param[in] fov Field of view in radians.
+    /// \param[in] aspect Aspect ratio of window (width / height).
+    /// \param[in] near Near clipping distance.
+    /// \param[in] far Far clipping distance.
+    /// \param[in] state Pointer to ApplicationState instance.
+    Camera(const glm::vec3& position,
+           const glm::vec3& upVector,
+           const glm::vec3& lookat,
+           const float& fov, const float& aspect,
+           const float& near, const float& far,
+           const std::shared_ptr<ApplicationState>& state);
+
+    /// Resize camera.
+    /// \param[in] aspect New aspect ratio (width / height).
+    void Resize(const float& aspect);
+
+    /// Translate camera along its view axis (zoom).
+    /// \param[in] delta Mouse wheel offset.
+    void Zoom(double delta);
+
+    /// Update camera attributes on the GPU.
+    void UpdateGPU();
+
+private:
+    /// Struct containing camera attributes to push on the GPU.
+    struct CameraData
+    {
+        glm::vec4 eye;
+        glm::mat4 viewMatrix;
+        glm::mat4 projectionMatrix;
+    };
+
+    /// Camera position.
+    glm::vec3 mPosition;
+
+    /// The point at the center of the camera view.
+    glm::vec3 mLookAt;
+
+    /// Up vector.
+    glm::vec3 mUpVector;
+
+    /// Field of view.
     float mFov;
+
+    /// Near clipping plane.
     float mNear;
+
+    /// Far clipping plane.
     float mFar;
+
+    /// Window aspect ratio.
     float mAspect;
+
+    /// Projection matrix.
     glm::mat4 mProjectionMatrix;
+
+    /// View matrix.
     glm::mat4 mViewMatrix;
-    Math::Coordinate::Spherical mSphCoords;
-    Math::Coordinate::Spherical mUpVector;
-    GPUData::CamParams mCamParams;
-    GPUData::ShaderData mCamParamsData;
+
+    /// Pointer to the ApplicationState, containing global parameters.
+    std::shared_ptr<ApplicationState> mState;
+
+    /// Shader data for camera attributes.
+    GPU::ShaderData mCamParamsData;
 };
-} // namespace Scene
-} // namespace Engine
+} // namespace Slicer

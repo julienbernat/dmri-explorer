@@ -1,152 +1,82 @@
 #pragma once
-
-#include <glm/glm.hpp>
-#include <vector>
+#include <glm/matrix.hpp>
+#include <coordinate_system.h>
 #include <memory>
-
-#include <binding.h>
-#include <data.h>
-#include <image.h>
-#include <sphere.h>
+#include <shader_data.h>
 #include <shader.h>
-#include <mutex>
+#include <application_state.h>
 
-namespace Engine
+namespace Slicer
 {
-namespace Scene
-{
-struct DrawElementsIndirectCommand
-{
-    DrawElementsIndirectCommand()
-        :count(0)
-        ,instanceCount(0)
-        ,firstIndex(0)
-        ,baseVertex(0)
-        ,baseInstance(0)
-    {
-    };
-
-    DrawElementsIndirectCommand(uint count,
-                                uint instanceCount,
-                                uint firstIndex,
-                                uint baseVertex,
-                                uint baseInstance)
-        :count(count)
-        ,instanceCount(instanceCount)
-        ,firstIndex(firstIndex)
-        ,baseVertex(baseVertex)
-        ,baseInstance(baseInstance)
-    {
-    };
-
-    /// Number of elements to be rendered
-    uint count;
-    /// Number of instances of the indexed geometry to draw
-    uint instanceCount;
-    /// Offset to the beginning of elements
-    uint firstIndex;
-    /// Constant that should be added to each element of indices
-    uint baseVertex;
-    /// Base instance for use in fetching instanced vertex attributes
-    uint baseInstance;
-};
-
+/// \brief Model base class.
+///
+/// All objects to be rendered in the scene should inherit
+/// from this class.
 class Model
 {
 public:
-    Model(std::shared_ptr<Image::NiftiImageWrapper> image,
-          const Scene::ShaderProgram& computeShader,
-          uint sphereRes);
+    /// Default constructor.
+    Model() = default;
+
+    /// Constructor.
+    /// \param[in] state Reference to ApplicationState.
+    Model(const std::shared_ptr<ApplicationState>& state);
+
+    /// Destructor.
     ~Model();
-    glm::ivec4 GetGridDims() const;
 
-    // slice display options
-    glm::ivec4 GetSliceIndex() const;
-    void SetSliceIndex(int i, int j, int k);
-
-    // orientation methods
-    void RotateModel(double deltaX, double deltaY);
-    void TranslateModel(double deltaX, double deltaY);
-    void ScaleModel(double deltaS);
-    float GetRotationSpeed() const;
-    float GetTranslationSpeed() const;
-    float GetScalingSpeed() const;
-    void SetRotationSpeed(float speed);
-    void SetTranslationSpeed(float speed);
-    void SetScalingSpeed(float speed);
-
-    // sphere display options
-    bool GetNormalized() const;
-    void SetNormalized(bool isNormalized);
-    float GetSH0Threshold() const;
-    void SetSH0Threshold(float threshold);
-    float GetSphereScaling() const;
-    void SetSphereScaling(float scaling);
-
-    // frame rendering methods
-    void ScaleSpheres();
+    /// Draw the object.
     void Draw();
+
+protected:
+    /// Initialize the model.
+
+    /// Must be called by child class before Draw() is called.
+    /// Calls updateApplicationStateAtInit(), registerStateCallbacks()
+    /// and initProgramPipeline().
+    /// \see updateApplicationStateAtInit()
+    /// \see registerStateCallbacks()
+    /// \see initProgramPipeline()
+    void initializeModel();
+
+    /// Pure virtual function describing how to draw this object.
+    virtual void drawSpecific() = 0;
+
+    /// Pure virtual function for updating ApplicationState
+    /// at initialization (if necessary).
+    virtual void updateApplicationStateAtInit() = 0;
+
+    /// Pure virtual function for registering ApplicationState
+    /// callbacks at initialization (if necessary).
+    virtual void registerStateCallbacks() = 0;
+
+    /// Pure virtual function for initializing the shader
+    /// program pipeline for this object.
+    virtual void initProgramPipeline() = 0;
+
+    /// Reset CoordinateSystem of the object.
+    /// \param[in] cs Reference to the object's CoordinateSystem
+    ///               (can be nullptr if it belongs to World CS).
+    void resetCS(std::shared_ptr<CoordinateSystem> cs);
+
+    /// Program pipeline for this Model.
+    GPU::ProgramPipeline mProgramPipeline;
+
+    /// Reference to the ApplicationState.
+    std::shared_ptr<ApplicationState> mState;
+
 private:
-    void initializeMembers();
-    void initializeGPUData();
-    void initializePerVoxelAttributes();
-    void initializePerSphereAttributes();
-    template<typename T> GLuint genVBO(const std::vector<T>& data) const;
-    bool isAnySliceDirty() const;
+    /// Upload the model transform from its coordinate system to World
+    /// coordinate system to the GPU.
+    void uploadTransformToGPU();
 
-    // multithreading
-    std::mutex mMutex;
+    /// Transform GPU data.
+    GPU::ShaderData mTransformGPUData;
 
-    // model orientation parameters
-    float mRotationSpeed;
-    float mScalingSpeed;
-    float mTranslationSpeed;
+    /// Reference to this object's coordinate system.
+    std::shared_ptr<CoordinateSystem> mCoordinateSystem;
 
-    // Image data
-    // mImage contains grid dimensions, number of voxels
-    std::shared_ptr<Image::NiftiImageWrapper> mImage;
-
-    // Sphere topology
-    Primitive::Sphere mSphere;
-
-    // Slicing
-    GPUData::GridInfo mGridInfo;
-    uint mNbSpheres;
-
-    // Rendered primitives
-    std::vector<GLuint> mIndices;
-    std::vector<glm::vec4> mAllSpheresVertices;
-    std::vector<glm::vec4> mAllSpheresNormals;
-
-    // GPU bindings
-    GLuint mVAO = 0;
-    GLuint mIndicesBO = 0;
-    GLuint mIndirectBO = 0;
-
-    Scene::ShaderProgram mComputeShader;
-
-    // Shader uniforms
-    glm::mat4 mModelMatrix;
-    std::vector<float> mSphHarmCoeffs;
-    std::vector<float> mSphHarmFuncs;
-    GPUData::SphereInfo mSphereInfo;
-
-    GPUData::ShaderData mModelMatrixData;
-    GPUData::ShaderData mSphHarmCoeffsData;
-    GPUData::ShaderData mSphHarmFuncsData;
-    GPUData::ShaderData mGridInfoData;
-
-    // Data on topology of ONE sphere
-    GPUData::ShaderData mSphereVerticesData;
-    GPUData::ShaderData mSphereNormalsData;
-    GPUData::ShaderData mSphereIndicesData;
-    GPUData::ShaderData mSphereInfoData;
-
-    // Empty arrays to fill in compute shader pass
-    GPUData::ShaderData mAllSpheresVerticesData;
-    GPUData::ShaderData mAllSpheresNormalsData;
-
-    std::vector<DrawElementsIndirectCommand> mIndirectCmd;
+    /// Has initializeModel() been called?
+    bool mIsInit;
 };
-} // namespace Scene
-} // namespace Engine
+} // namespace Slcier
