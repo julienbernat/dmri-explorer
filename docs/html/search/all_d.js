@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['rtfodf_20slicer_53',['RTfODF Slicer',['../index.html',1,'']]],
+  ['rt_20fodf_20slicer_53',['RT fODF Slicer',['../index.html',1,'']]],
   ['r_54',['r',['../structSlicer_1_1Math_1_1SphericalCoordinates.html#ab6cd82e791fec3918176e978c266a3c8',1,'Slicer::Math::SphericalCoordinates']]],
   ['realsymdescoteauxbasis_55',['RealSymDescoteauxBasis',['../classSlicer_1_1Math_1_1SH_1_1RealSymDescoteauxBasis.html',1,'Slicer::Math::SH::RealSymDescoteauxBasis'],['../classSlicer_1_1Math_1_1SH_1_1RealSymDescoteauxBasis.html#a0766d71e2260ab28781adeef8267f953',1,'Slicer::Math::SH::RealSymDescoteauxBasis::RealSymDescoteauxBasis()'],['../classSlicer_1_1Math_1_1SH_1_1RealSymDescoteauxBasis.html#a1d97dedf2f56e5d4078cda6772e92cb4',1,'Slicer::Math::SH::RealSymDescoteauxBasis::RealSymDescoteauxBasis(unsigned int maxOrder)']]],
   ['registercallback_56',['RegisterCallback',['../classSlicer_1_1ApplicationParameter.html#a86d7a5c63b003332f02681a672318f18',1,'Slicer::ApplicationParameter']]],
