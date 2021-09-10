@@ -85,8 +85,8 @@ Public Member Functions</h2></td></tr>
 &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSlicer_1_1Primitive_1_1Sphere.html#ae36da461f8576f371544d046139ed869">Sphere</a> ()</td></tr>
 <tr class="memdesc:ae36da461f8576f371544d046139ed869"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default constructor. <br /></td></tr>
 <tr class="separator:ae36da461f8576f371544d046139ed869"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5ea4da6b0fbf002128065a68af9b25d9"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSlicer_1_1Primitive_1_1Sphere.html#a5ea4da6b0fbf002128065a68af9b25d9">Sphere</a> (unsigned int resolution)</td></tr>
-<tr class="separator:a5ea4da6b0fbf002128065a68af9b25d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afdcd4a7f89643a302aaabc32a8f9e2c1"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSlicer_1_1Primitive_1_1Sphere.html#afdcd4a7f89643a302aaabc32a8f9e2c1">Sphere</a> (unsigned int resolution, unsigned int nbSHCoeffs)</td></tr>
+<tr class="separator:afdcd4a7f89643a302aaabc32a8f9e2c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad9ebb3a9e7d83fb103c39b18e1bad852"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSlicer_1_1Primitive_1_1Sphere.html#ad9ebb3a9e7d83fb103c39b18e1bad852">Sphere</a> (const <a class="el" href="classSlicer_1_1Primitive_1_1Sphere.html">Sphere</a> &amp;other)</td></tr>
 <tr class="separator:ad9ebb3a9e7d83fb103c39b18e1bad852"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a713852b2ef646515364c222be5da86f4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classSlicer_1_1Primitive_1_1Sphere.html">Sphere</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSlicer_1_1Primitive_1_1Sphere.html#a713852b2ef646515364c222be5da86f4">operator=</a> (const <a class="el" href="classSlicer_1_1Primitive_1_1Sphere.html">Sphere</a> &amp;other)</td></tr>
@@ -97,12 +97,16 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a972aaf35b2951e3e8e67e3c5aeba664d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a37074d4b7ff1614cabce265b34ee2447"><td class="memItemLeft" align="right" valign="top">std::vector&lt; float &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSlicer_1_1Primitive_1_1Sphere.html#a37074d4b7ff1614cabce265b34ee2447">getSHFuncs</a> () const</td></tr>
 <tr class="separator:a37074d4b7ff1614cabce265b34ee2447"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab5a4972cc2b37f199b7a476b4f2711d8"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSlicer_1_1Primitive_1_1Sphere.html#ab5a4972cc2b37f199b7a476b4f2711d8">GetMaxSHOrder</a> () const</td></tr>
+<tr class="separator:ab5a4972cc2b37f199b7a476b4f2711d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a06294eb9a31ab436289d79a0fbc55693"><td class="memItemLeft" align="right" valign="top">std::vector&lt; float &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSlicer_1_1Primitive_1_1Sphere.html#a06294eb9a31ab436289d79a0fbc55693">GetOrdersList</a> () const</td></tr>
+<tr class="separator:a06294eb9a31ab436289d79a0fbc55693"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Class describing a sphere. </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a5ea4da6b0fbf002128065a68af9b25d9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5ea4da6b0fbf002128065a68af9b25d9">&#9670;&nbsp;</a></span>Sphere() <span class="overload">[1/2]</span></h2>
+<a id="afdcd4a7f89643a302aaabc32a8f9e2c1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afdcd4a7f89643a302aaabc32a8f9e2c1">&#9670;&nbsp;</a></span>Sphere() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -111,14 +115,25 @@ Public Member Functions</h2></td></tr>
           <td class="memname">Slicer::Primitive::Sphere::Sphere </td>
           <td>(</td>
           <td class="paramtype">unsigned int&#160;</td>
-          <td class="paramname"><em>resolution</em></td><td>)</td>
+          <td class="paramname"><em>resolution</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>nbSHCoeffs</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 <p>Constructor. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">resolution</td><td>Resolution of the sphere. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">nbSHCoeffs</td><td>Number of spherical harmonics coefficients. </td></tr>
   </table>
   </dd>
 </dl>
@@ -173,6 +188,58 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 <p>Get indices array describing the sphere triangulation. </p><dl class="section return"><dt>Returns</dt><dd>Vector of indices. </dd></dl>
+
+</div>
+</div>
+<a id="ab5a4972cc2b37f199b7a476b4f2711d8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab5a4972cc2b37f199b7a476b4f2711d8">&#9670;&nbsp;</a></span>GetMaxSHOrder()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned int Slicer::Primitive::Sphere::GetMaxSHOrder </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Get the maximum SH order. </p><dl class="section return"><dt>Returns</dt><dd>The maximum SH order for the basis. </dd></dl>
+
+</div>
+</div>
+<a id="a06294eb9a31ab436289d79a0fbc55693"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a06294eb9a31ab436289d79a0fbc55693">&#9670;&nbsp;</a></span>GetOrdersList()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;float&gt; Slicer::Primitive::Sphere::GetOrdersList </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Get all SH orders. </p><dl class="section return"><dt>Returns</dt><dd>A vector where the ith position contains the SH order corresponding to the SH function at position i. </dd></dl>
 
 </div>
 </div>
