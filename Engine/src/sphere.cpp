@@ -2,7 +2,8 @@
 
 namespace
 {
-const uint MAX_SH_ORDER = 8;
+const uint DEFAULT_NB_COEFFS = 45;
+const uint DEFAULT_RESOLUTION = 20;
 }
 
 namespace Slicer
@@ -10,22 +11,25 @@ namespace Slicer
 namespace Primitive
 {
 Sphere::Sphere()
-:mResolution(10)
+:mResolution(DEFAULT_RESOLUTION)
 ,mIndices()
 ,mPoints()
-,mSHBasis(MAX_SH_ORDER)
+,mSHBasis(nullptr)
 ,mSphHarmFunc()
 {
+    mSHBasis.reset(new SH::DescoteauxBasis(DEFAULT_NB_COEFFS));
     genUnitSphere();
 }
 
-Sphere::Sphere(unsigned int resolution)
+Sphere::Sphere(unsigned int resolution,
+               unsigned int nbSHCoeffs)
 :mResolution(resolution)
 ,mIndices()
 ,mPoints()
-,mSHBasis(MAX_SH_ORDER)
+,mSHBasis()
 ,mSphHarmFunc()
 {
+    mSHBasis.reset(new SH::DescoteauxBasis(nbSHCoeffs));
     genUnitSphere();
 }
 
@@ -56,13 +60,10 @@ void Sphere::addPoint(float theta, float phi, float r)
 {
     const glm::vec3 vecCartesian = convertToCartesian(theta, phi, r);
     mPoints.push_back(glm::vec4(vecCartesian.x, vecCartesian.y, vecCartesian.z, 1.0f));
-    // evaluate SH function for all l, m up to MAX_SH_ORDER
-    for(int l = 0; l <= MAX_SH_ORDER; l += 2)
+    const std::vector<float> shFuncs = mSHBasis->at(theta, phi);
+    for(float f : shFuncs)
     {
-        for(int m = -l; m <= l; ++m)
-        {
-            mSphHarmFunc.push_back(mSHBasis.at(l, m, theta, phi));
-        }
+        mSphHarmFunc.push_back(f);
     }
 }
 

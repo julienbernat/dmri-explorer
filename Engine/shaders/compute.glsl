@@ -36,8 +36,10 @@ layout(std430, binding=7) buffer sphereInfoBuffer
     uint nbVertices;
     uint nbIndices;
     uint isNormalized; // bool
+    uint maxOrder;
     float sh0Threshold;
     float scaling;
+    uint nbCoeffs;
 };
 
 layout(std430, binding=8) buffer gridInfoBuffer
@@ -47,36 +49,32 @@ layout(std430, binding=8) buffer gridInfoBuffer
     ivec4 isSliceDirty;
 };
 
-const uint NB_SH = 45;
-const uint MAX_ORDER = 8;
+layout(std430, binding=11) buffer ordersBuffer
+{
+    float L[];
+};
+
 const float FLOAT_EPS = 1e-4;
 const float PI = 3.14159265358979323;
-
-const float L[45] = {
-    0,
-    2, 2, 2, 2, 2,
-    4, 4, 4, 4, 4, 4, 4, 4, 4,
-    6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6,
-    8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8};
 
 float evaluateSH(uint voxID, uint sphVertID)
 {
     float ret = 0.0f;
     float sum = 0.0f;
     float rmax = 0.0f;
-    for(int i = 0; i < NB_SH; ++i)
+    for(int i = 0; i < nbCoeffs; ++i)
     {
-        sum += abs(shCoeffs[voxID * NB_SH + i]);
-        ret += shCoeffs[voxID * NB_SH + i]
-                * shFuncs[sphVertID * NB_SH + i];
-        rmax += (2.0f * L[i] + 1) / 4.0f / PI * pow(shCoeffs[voxID * NB_SH + i], 2);
+        sum += abs(shCoeffs[voxID * nbCoeffs + i]);
+        ret += shCoeffs[voxID * nbCoeffs + i]
+                * shFuncs[sphVertID * nbCoeffs + i];
+        rmax += (2.0f * L[i] + 1.0f) / 4.0f / PI * pow(shCoeffs[voxID * nbCoeffs + i], 2);
     }
     if(sum > 0.0)
     {
         if(isNormalized > 0)
         {
             rmax = sqrt(rmax);
-            rmax *= sqrt(0.5f * float(MAX_ORDER) + 1);
+            rmax *= sqrt(0.5f * float(maxOrder) + 1);
             return ret / rmax;
         }
         return ret;
@@ -186,7 +184,7 @@ void main()
 
     const uint voxID = convertInvocationIDToVoxID(invocationID);
 
-    bool isVisible = shCoeffs[voxID * NB_SH] > 0.0f;
+    bool isVisible = shCoeffs[voxID * nbCoeffs] > 0.0f;
 
     scaleSphere(voxID, firstVertID, isVisible);
     if(isVisible)

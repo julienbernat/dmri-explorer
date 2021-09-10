@@ -25,8 +25,10 @@ layout(std430, binding=7) buffer sphereInfoBuffer
     uint nbVertices;
     uint nbIndices;
     uint isNormalized; // bool
+    uint maxOrder;
     float sh0Threshold;
     float scaling;
+    uint nbCoeffs;
 };
 
 layout(std430, binding=8) buffer gridInfoBuffer
@@ -56,9 +58,6 @@ out vec3 v_color;
 out vec4 v_normal;
 out vec4 v_eye;
 out float v_isVisible;
-
-// Constants
-const int NB_SH = 45;
 
 ivec3 convertInvocationIDToIndex3D(uint invocationID)
 {
@@ -91,7 +90,7 @@ void main()
 {
     const ivec3 index3d = convertInvocationIDToIndex3D(gl_DrawID);
     const uint voxID = convertIndex3DToVoxID(index3d.x, index3d.y, index3d.z);
-    bool isVisible = shCoeffs[voxID * NB_SH] > sh0Threshold;
+    bool isVisible = shCoeffs[voxID * nbCoeffs] > sh0Threshold;
 
     mat4 trMat;
     trMat[0][0] = scaling;
