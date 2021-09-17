@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['zoom_210',['Zoom',['../classSlicer_1_1Camera.html#a10e4541255971447f564cc4a56ad2c44',1,'Slicer::Camera']]]
+  ['zoom_211',['Zoom',['../classSlicer_1_1Camera.html#a10e4541255971447f564cc4a56ad2c44',1,'Slicer::Camera']]]
 ];
