@@ -87,27 +87,30 @@ $(function() {
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160; </div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <a class="code" href="classSlicer_1_1Scene.html#a1646603a8ba0fbb00b36d23e229ec6e0">~Scene</a>();</div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160; </div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classSlicer_1_1Scene.html#aedc6043d293e8817db2561bc47a3814b">Render</a>();</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classSlicer_1_1Scene.html#a3211a7040a1d478a7d65db4d7c809041">AddSHField</a>();</div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160; </div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classSlicer_1_1Scene.html#ace9e1da49673d5803e30f147e1168587">RotateCS</a>(<span class="keyword">const</span> glm::vec2&amp; v);</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160; </div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classSlicer_1_1Scene.html#a46bbbded37709cc377e345812952ef6d">TranslateCS</a>(<span class="keyword">const</span> glm::vec2&amp; v);</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160; </div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    std::shared_ptr&lt;CoordinateSystem&gt; mCoordinateSystem;</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160; </div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    std::shared_ptr&lt;ApplicationState&gt; mState;</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classSlicer_1_1Scene.html#aedc6043d293e8817db2561bc47a3814b">Render</a>();</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160; </div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classSlicer_1_1Scene.html#ace9e1da49673d5803e30f147e1168587">RotateCS</a>(<span class="keyword">const</span> glm::vec2&amp; v);</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160; </div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classSlicer_1_1Scene.html#a46bbbded37709cc377e345812952ef6d">TranslateCS</a>(<span class="keyword">const</span> glm::vec2&amp; v);</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160; </div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    std::shared_ptr&lt;CoordinateSystem&gt; mCoordinateSystem;</div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160; </div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    std::vector&lt;std::shared_ptr&lt;Model&gt;&gt; mModels;</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;};</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;} <span class="comment">// namespace Slicer</span></div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    std::shared_ptr&lt;ApplicationState&gt; mState;</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160; </div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    std::vector&lt;std::shared_ptr&lt;Model&gt;&gt; mModels;</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;};</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;} <span class="comment">// namespace Slicer</span></div>
 </div><!-- fragment --></div><!-- contents -->
 <div class="ttc" id="aclassSlicer_1_1Scene_html"><div class="ttname"><a href="classSlicer_1_1Scene.html">Slicer::Scene</a></div><div class="ttdoc">Class describing the 3D scene, itself containing models.</div><div class="ttdef"><b>Definition:</b> scene.h:12</div></div>
-<div class="ttc" id="aclassSlicer_1_1Scene_html_aedc6043d293e8817db2561bc47a3814b"><div class="ttname"><a href="classSlicer_1_1Scene.html#aedc6043d293e8817db2561bc47a3814b">Slicer::Scene::Render</a></div><div class="ttdeci">void Render()</div><div class="ttdoc">Render the scene.</div><div class="ttdef"><b>Definition:</b> scene.cpp:21</div></div>
+<div class="ttc" id="aclassSlicer_1_1Scene_html_aedc6043d293e8817db2561bc47a3814b"><div class="ttname"><a href="classSlicer_1_1Scene.html#aedc6043d293e8817db2561bc47a3814b">Slicer::Scene::Render</a></div><div class="ttdeci">void Render()</div><div class="ttdoc">Render the scene.</div><div class="ttdef"><b>Definition:</b> scene.cpp:25</div></div>
 <div class="ttc" id="aclassSlicer_1_1Scene_html_a84f8807e28065cf94d961ee55e30ed69"><div class="ttname"><a href="classSlicer_1_1Scene.html#a84f8807e28065cf94d961ee55e30ed69">Slicer::Scene::Scene</a></div><div class="ttdeci">Scene()=default</div><div class="ttdoc">Default constructor.</div></div>
-<div class="ttc" id="aclassSlicer_1_1Scene_html_ace9e1da49673d5803e30f147e1168587"><div class="ttname"><a href="classSlicer_1_1Scene.html#ace9e1da49673d5803e30f147e1168587">Slicer::Scene::RotateCS</a></div><div class="ttdeci">void RotateCS(const glm::vec2 &amp;v)</div><div class="ttdef"><b>Definition:</b> scene.cpp:30</div></div>
-<div class="ttc" id="aclassSlicer_1_1Scene_html_a46bbbded37709cc377e345812952ef6d"><div class="ttname"><a href="classSlicer_1_1Scene.html#a46bbbded37709cc377e345812952ef6d">Slicer::Scene::TranslateCS</a></div><div class="ttdeci">void TranslateCS(const glm::vec2 &amp;v)</div><div class="ttdef"><b>Definition:</b> scene.cpp:40</div></div>
-<div class="ttc" id="aclassSlicer_1_1Scene_html_a1646603a8ba0fbb00b36d23e229ec6e0"><div class="ttname"><a href="classSlicer_1_1Scene.html#a1646603a8ba0fbb00b36d23e229ec6e0">Slicer::Scene::~Scene</a></div><div class="ttdeci">~Scene()</div><div class="ttdoc">Destructor.</div><div class="ttdef"><b>Definition:</b> scene.cpp:17</div></div>
+<div class="ttc" id="aclassSlicer_1_1Scene_html_ace9e1da49673d5803e30f147e1168587"><div class="ttname"><a href="classSlicer_1_1Scene.html#ace9e1da49673d5803e30f147e1168587">Slicer::Scene::RotateCS</a></div><div class="ttdeci">void RotateCS(const glm::vec2 &amp;v)</div><div class="ttdef"><b>Definition:</b> scene.cpp:34</div></div>
+<div class="ttc" id="aclassSlicer_1_1Scene_html_a3211a7040a1d478a7d65db4d7c809041"><div class="ttname"><a href="classSlicer_1_1Scene.html#a3211a7040a1d478a7d65db4d7c809041">Slicer::Scene::AddSHField</a></div><div class="ttdeci">void AddSHField()</div><div class="ttdoc">Add an SHField instance to the scene.</div><div class="ttdef"><b>Definition:</b> scene.cpp:19</div></div>
+<div class="ttc" id="aclassSlicer_1_1Scene_html_a46bbbded37709cc377e345812952ef6d"><div class="ttname"><a href="classSlicer_1_1Scene.html#a46bbbded37709cc377e345812952ef6d">Slicer::Scene::TranslateCS</a></div><div class="ttdeci">void TranslateCS(const glm::vec2 &amp;v)</div><div class="ttdef"><b>Definition:</b> scene.cpp:44</div></div>
+<div class="ttc" id="aclassSlicer_1_1Scene_html_a1646603a8ba0fbb00b36d23e229ec6e0"><div class="ttname"><a href="classSlicer_1_1Scene.html#a1646603a8ba0fbb00b36d23e229ec6e0">Slicer::Scene::~Scene</a></div><div class="ttdeci">~Scene()</div><div class="ttdoc">Destructor.</div><div class="ttdef"><b>Definition:</b> scene.cpp:15</div></div>
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
 Generated by &#160;<a href="http://www.doxygen.org/index.html">
