@@ -68,6 +68,8 @@ $(function() {
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pri-methods">Private Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="classSlicer_1_1Primitive_1_1Sphere-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">Slicer::Primitive::Sphere Class Reference</div>  </div>
@@ -101,6 +103,46 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ab5a4972cc2b37f199b7a476b4f2711d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a06294eb9a31ab436289d79a0fbc55693"><td class="memItemLeft" align="right" valign="top">std::vector&lt; float &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSlicer_1_1Primitive_1_1Sphere.html#a06294eb9a31ab436289d79a0fbc55693">GetOrdersList</a> () const</td></tr>
 <tr class="separator:a06294eb9a31ab436289d79a0fbc55693"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
+Private Member Functions</h2></td></tr>
+<tr class="memitem:a440d0808173ddf047d25c96908f5c327"><td class="memItemLeft" align="right" valign="top"><a id="a440d0808173ddf047d25c96908f5c327"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSlicer_1_1Primitive_1_1Sphere.html#a440d0808173ddf047d25c96908f5c327">genUnitIcosahedron</a> ()</td></tr>
+<tr class="memdesc:a440d0808173ddf047d25c96908f5c327"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generate the sphere mesh from a unit icosahedron. <br /></td></tr>
+<tr class="separator:a440d0808173ddf047d25c96908f5c327"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a261c79b33b6b5282a5ad677d50b05128"><td class="memItemLeft" align="right" valign="top"><a id="a261c79b33b6b5282a5ad677d50b05128"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSlicer_1_1Primitive_1_1Sphere.html#a261c79b33b6b5282a5ad677d50b05128">subdivide</a> ()</td></tr>
+<tr class="memdesc:a261c79b33b6b5282a5ad677d50b05128"><td class="mdescLeft">&#160;</td><td class="mdescRight">Subdivide each triangle into 4 smaller triangles. <br /></td></tr>
+<tr class="separator:a261c79b33b6b5282a5ad677d50b05128"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4a5d0ad2067115ac77de2620acc79ee1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSlicer_1_1Primitive_1_1Sphere.html#a4a5d0ad2067115ac77de2620acc79ee1">addPoint</a> (const glm::vec3 &amp;cartesian)</td></tr>
+<tr class="separator:a4a5d0ad2067115ac77de2620acc79ee1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a04e1f657dd7710ec908c673e23a79eb6"><td class="memItemLeft" align="right" valign="top">glm::vec3&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSlicer_1_1Primitive_1_1Sphere.html#a04e1f657dd7710ec908c673e23a79eb6">convertToCartesian</a> (float r, float theta, float phi) const</td></tr>
+<tr class="separator:a04e1f657dd7710ec908c673e23a79eb6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae0ace63ad3508e0e512cb15024b9d6bf"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structSlicer_1_1Math_1_1SphericalCoordinates.html">Math::SphericalCoordinates</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSlicer_1_1Primitive_1_1Sphere.html#ae0ace63ad3508e0e512cb15024b9d6bf">convertToSpherical</a> (const glm::vec3 &amp;cartesian) const</td></tr>
+<tr class="separator:ae0ace63ad3508e0e512cb15024b9d6bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:a6b634b788a77a0e3ab30e0ed0eae4859"><td class="memItemLeft" align="right" valign="top"><a id="a6b634b788a77a0e3ab30e0ed0eae4859"></a>
+std::vector&lt; glm::vec4 &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSlicer_1_1Primitive_1_1Sphere.html#a6b634b788a77a0e3ab30e0ed0eae4859">mPoints</a></td></tr>
+<tr class="memdesc:a6b634b788a77a0e3ab30e0ed0eae4859"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classSlicer_1_1Primitive_1_1Sphere.html" title="Class describing a sphere.">Sphere</a> points as homogeneous coordinates. <br /></td></tr>
+<tr class="separator:a6b634b788a77a0e3ab30e0ed0eae4859"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8ddb5e4a23e1024844da674ed4eef460"><td class="memItemLeft" align="right" valign="top"><a id="a8ddb5e4a23e1024844da674ed4eef460"></a>
+std::vector&lt; GLuint &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSlicer_1_1Primitive_1_1Sphere.html#a8ddb5e4a23e1024844da674ed4eef460">mIndices</a></td></tr>
+<tr class="memdesc:a8ddb5e4a23e1024844da674ed4eef460"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classSlicer_1_1Primitive_1_1Sphere.html" title="Class describing a sphere.">Sphere</a> indices for triangulation. <br /></td></tr>
+<tr class="separator:a8ddb5e4a23e1024844da674ed4eef460"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1b9cc51cf59fb210bf28b636295dc397"><td class="memItemLeft" align="right" valign="top"><a id="a1b9cc51cf59fb210bf28b636295dc397"></a>
+std::vector&lt; float &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSlicer_1_1Primitive_1_1Sphere.html#a1b9cc51cf59fb210bf28b636295dc397">mSphHarmFunc</a></td></tr>
+<tr class="memdesc:a1b9cc51cf59fb210bf28b636295dc397"><td class="mdescLeft">&#160;</td><td class="mdescRight">SH functions at each point in mPoints. <br /></td></tr>
+<tr class="separator:a1b9cc51cf59fb210bf28b636295dc397"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a31b821754925d89c3837d3576b352b1b"><td class="memItemLeft" align="right" valign="top"><a id="a31b821754925d89c3837d3576b352b1b"></a>
+std::shared_ptr&lt; <a class="el" href="classSlicer_1_1SH_1_1DescoteauxBasis.html">SH::DescoteauxBasis</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSlicer_1_1Primitive_1_1Sphere.html#a31b821754925d89c3837d3576b352b1b">mSHBasis</a></td></tr>
+<tr class="memdesc:a31b821754925d89c3837d3576b352b1b"><td class="mdescLeft">&#160;</td><td class="mdescRight">SH basis in use. <br /></td></tr>
+<tr class="separator:a31b821754925d89c3837d3576b352b1b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9fdbd7aa3a9b316bd700126c9219b5ae"><td class="memItemLeft" align="right" valign="top"><a id="a9fdbd7aa3a9b316bd700126c9219b5ae"></a>
+unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSlicer_1_1Primitive_1_1Sphere.html#a9fdbd7aa3a9b316bd700126c9219b5ae">mResolution</a></td></tr>
+<tr class="memdesc:a9fdbd7aa3a9b316bd700126c9219b5ae"><td class="mdescLeft">&#160;</td><td class="mdescRight">Resolution of sphere. <br /></td></tr>
+<tr class="separator:a9fdbd7aa3a9b316bd700126c9219b5ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Class describing a sphere. </p>
@@ -165,6 +207,122 @@ Public Member Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a id="a4a5d0ad2067115ac77de2620acc79ee1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4a5d0ad2067115ac77de2620acc79ee1">&#9670;&nbsp;</a></span>addPoint()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Slicer::Primitive::Sphere::addPoint </td>
+          <td>(</td>
+          <td class="paramtype">const glm::vec3 &amp;&#160;</td>
+          <td class="paramname"><em>cartesian</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Add a point to the sphere. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">cartesian</td><td>Point to add, expressed in cartesian coordinates </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a04e1f657dd7710ec908c673e23a79eb6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a04e1f657dd7710ec908c673e23a79eb6">&#9670;&nbsp;</a></span>convertToCartesian()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">glm::vec3 Slicer::Primitive::Sphere::convertToCartesian </td>
+          <td>(</td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>r</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>theta</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>phi</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Convert spherical coordinates to cartesian coordinates. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">r</td><td>Radius </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">theta</td><td>Inclination angle in radians. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">phi</td><td>Azimuth angle in radians. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Corresponding position in cartesian coordinates. </dd></dl>
+
+</div>
+</div>
+<a id="ae0ace63ad3508e0e512cb15024b9d6bf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae0ace63ad3508e0e512cb15024b9d6bf">&#9670;&nbsp;</a></span>convertToSpherical()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structSlicer_1_1Math_1_1SphericalCoordinates.html">Math::SphericalCoordinates</a> Slicer::Primitive::Sphere::convertToSpherical </td>
+          <td>(</td>
+          <td class="paramtype">const glm::vec3 &amp;&#160;</td>
+          <td class="paramname"><em>cartesian</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Convert cartesian coordinates to spherical coordinates. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">cartesian</td><td>3D cartesian coordinate. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Corresponding position in spherical coordinates. </dd></dl>
+
+</div>
+</div>
 <a id="abd863b626642a3c4194f0ae7b5ec5847"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#abd863b626642a3c4194f0ae7b5ec5847">&#9670;&nbsp;</a></span>GetIndices()</h2>
 

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['model_176',['Model',['../classSlicer_1_1Model.html#af3ac17a83308a18d87fb23491d2dfb16',1,'Slicer::Model::Model()=default'],['../classSlicer_1_1Model.html#a7f200d78b27357dceb2a92193b020746',1,'Slicer::Model::Model(const std::shared_ptr&lt; ApplicationState &gt; &amp;state)']]]
+  ['length_310',['length',['../classSlicer_1_1NiftiImageWrapper.html#a76d2218b77a5cf62884ca5e8a83bc791',1,'Slicer::NiftiImageWrapper']]]
 ];

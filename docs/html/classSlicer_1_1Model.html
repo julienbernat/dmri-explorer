@@ -70,6 +70,8 @@ $(function() {
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pro-methods">Protected Member Functions</a> &#124;
 <a href="#pro-attribs">Protected Attributes</a> &#124;
+<a href="#pri-methods">Private Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="classSlicer_1_1Model-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">Slicer::Model Class Reference<span class="mlabels"><span class="mlabel">abstract</span></span></div>  </div>
@@ -135,6 +137,26 @@ Protected Attributes</h2></td></tr>
 std::shared_ptr&lt; <a class="el" href="classSlicer_1_1ApplicationState.html">ApplicationState</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSlicer_1_1Model.html#a03a2b2bda51a3e0814fd511284bb8540">mState</a></td></tr>
 <tr class="memdesc:a03a2b2bda51a3e0814fd511284bb8540"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reference to the <a class="el" href="classSlicer_1_1ApplicationState.html" title="Class containing global parameters for the application.">ApplicationState</a>. <br /></td></tr>
 <tr class="separator:a03a2b2bda51a3e0814fd511284bb8540"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
+Private Member Functions</h2></td></tr>
+<tr class="memitem:a69d01e9ab9cf96bb44758f9400d856e7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSlicer_1_1Model.html#a69d01e9ab9cf96bb44758f9400d856e7">uploadTransformToGPU</a> ()</td></tr>
+<tr class="separator:a69d01e9ab9cf96bb44758f9400d856e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:a43898125b915cc3f1664d4c2303a41da"><td class="memItemLeft" align="right" valign="top"><a id="a43898125b915cc3f1664d4c2303a41da"></a>
+<a class="el" href="classSlicer_1_1GPU_1_1ShaderData.html">GPU::ShaderData</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSlicer_1_1Model.html#a43898125b915cc3f1664d4c2303a41da">mTransformGPUData</a></td></tr>
+<tr class="memdesc:a43898125b915cc3f1664d4c2303a41da"><td class="mdescLeft">&#160;</td><td class="mdescRight">Transform GPU data. <br /></td></tr>
+<tr class="separator:a43898125b915cc3f1664d4c2303a41da"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac409b744ed19ba8104a2b4af3bd60cc0"><td class="memItemLeft" align="right" valign="top"><a id="ac409b744ed19ba8104a2b4af3bd60cc0"></a>
+std::shared_ptr&lt; <a class="el" href="classSlicer_1_1CoordinateSystem.html">CoordinateSystem</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSlicer_1_1Model.html#ac409b744ed19ba8104a2b4af3bd60cc0">mCoordinateSystem</a></td></tr>
+<tr class="memdesc:ac409b744ed19ba8104a2b4af3bd60cc0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reference to this object's coordinate system. <br /></td></tr>
+<tr class="separator:ac409b744ed19ba8104a2b4af3bd60cc0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aef482aa74152976f0742c9630539a44c"><td class="memItemLeft" align="right" valign="top"><a id="aef482aa74152976f0742c9630539a44c"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSlicer_1_1Model.html#aef482aa74152976f0742c9630539a44c">mIsInit</a></td></tr>
+<tr class="memdesc:aef482aa74152976f0742c9630539a44c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Has <a class="el" href="classSlicer_1_1Model.html#a09a12918ed052e7963437c35e5a945a7" title="Initialize the model.">initializeModel()</a> been called? <br /></td></tr>
+<tr class="separator:aef482aa74152976f0742c9630539a44c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p><a class="el" href="classSlicer_1_1Model.html" title="Model base class.">Model</a> base class. </p>
@@ -310,6 +332,32 @@ std::shared_ptr&lt; <a class="el" href="classSlicer_1_1ApplicationState.html">Ap
 <p>Pure virtual function for updating <a class="el" href="classSlicer_1_1ApplicationState.html" title="Class containing global parameters for the application.">ApplicationState</a> at initialization (if necessary). </p>
 
 <p>Implemented in <a class="el" href="classSlicer_1_1SHField.html#a38d8014fec896b243fa2d8198581f8d1">Slicer::SHField</a>.</p>
+
+</div>
+</div>
+<a id="a69d01e9ab9cf96bb44758f9400d856e7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a69d01e9ab9cf96bb44758f9400d856e7">&#9670;&nbsp;</a></span>uploadTransformToGPU()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Slicer::Model::uploadTransformToGPU </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Upload the model transform from its coordinate system to World coordinate system to the GPU. </p>
 
 </div>
 </div>

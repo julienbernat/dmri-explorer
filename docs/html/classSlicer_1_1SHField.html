@@ -70,6 +70,8 @@ $(function() {
 <a href="#nested-classes">Classes</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pro-methods">Protected Member Functions</a> &#124;
+<a href="#pri-methods">Private Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="classSlicer_1_1SHField-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">Slicer::SHField Class Reference</div>  </div>
@@ -90,6 +92,13 @@ Inheritance diagram for Slicer::SHField:</div>
   </map>
 </div></div>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structSlicer_1_1SHField_1_1GridData.html">GridData</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structSlicer_1_1SHField_1_1SphereData.html">SphereData</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a1bd52402dc71e3b02ead1860598a5f60"><td class="memItemLeft" align="right" valign="top"><a id="a1bd52402dc71e3b02ead1860598a5f60"></a>
@@ -138,6 +147,112 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <tr class="separator:a09a12918ed052e7963437c35e5a945a7 inherit pro_methods_classSlicer_1_1Model"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7b01c1a7404f20c744eda3c97172b21c inherit pro_methods_classSlicer_1_1Model"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSlicer_1_1Model.html#a7b01c1a7404f20c744eda3c97172b21c">resetCS</a> (std::shared_ptr&lt; <a class="el" href="classSlicer_1_1CoordinateSystem.html">CoordinateSystem</a> &gt; cs)</td></tr>
 <tr class="separator:a7b01c1a7404f20c744eda3c97172b21c inherit pro_methods_classSlicer_1_1Model"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
+Private Member Functions</h2></td></tr>
+<tr class="memitem:ac4fdd4474bd20f8f73cd318acde81fca"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSlicer_1_1SHField.html#ac4fdd4474bd20f8f73cd318acde81fca">initializeMembers</a> ()</td></tr>
+<tr class="memdesc:ac4fdd4474bd20f8f73cd318acde81fca"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize class members.  <a href="classSlicer_1_1SHField.html#ac4fdd4474bd20f8f73cd318acde81fca">More...</a><br /></td></tr>
+<tr class="separator:ac4fdd4474bd20f8f73cd318acde81fca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afa2e0a8d988db26d2afdb2b1dbacd334"><td class="memItemLeft" align="right" valign="top"><a id="afa2e0a8d988db26d2afdb2b1dbacd334"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSlicer_1_1SHField.html#afa2e0a8d988db26d2afdb2b1dbacd334">initializeGPUData</a> ()</td></tr>
+<tr class="memdesc:afa2e0a8d988db26d2afdb2b1dbacd334"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize data to be copied on the GPU. <br /></td></tr>
+<tr class="separator:afa2e0a8d988db26d2afdb2b1dbacd334"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a33ad67c6cbbaa2781a1f2fd3e1bb6bba"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSlicer_1_1SHField.html#a33ad67c6cbbaa2781a1f2fd3e1bb6bba">copySubsetSHCoefficientsFromImage</a> (size_t firstIndex, size_t lastIndex)</td></tr>
+<tr class="separator:a33ad67c6cbbaa2781a1f2fd3e1bb6bba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2d3ab597986a3c5e3ae644a3f9d30074"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSlicer_1_1SHField.html#a2d3ab597986a3c5e3ae644a3f9d30074">initializeSubsetDrawCommand</a> (size_t firstIndex, size_t lastIndex)</td></tr>
+<tr class="separator:a2d3ab597986a3c5e3ae644a3f9d30074"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abd7d42944cd54659e46bf4047ec42753"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSlicer_1_1SHField.html#abd7d42944cd54659e46bf4047ec42753">dispatchSubsetCommands</a> (void(SHField::*fn)(size_t, size_t), size_t nbElements, size_t nbThreads, std::vector&lt; std::thread &gt; &amp;threads)</td></tr>
+<tr class="separator:abd7d42944cd54659e46bf4047ec42753"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3ba99fc210cc7817b17d48363b1f79d1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSlicer_1_1SHField.html#a3ba99fc210cc7817b17d48363b1f79d1">setSphereScaling</a> (float previous, float scaling)</td></tr>
+<tr class="separator:a3ba99fc210cc7817b17d48363b1f79d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a349baa1d65b2bf86ceaa1ea9fc4dcbff"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSlicer_1_1SHField.html#a349baa1d65b2bf86ceaa1ea9fc4dcbff">setSliceIndex</a> (glm::vec3 previous, glm::vec3 indices)</td></tr>
+<tr class="separator:a349baa1d65b2bf86ceaa1ea9fc4dcbff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9533a2769305f787d894ae07f8817002"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSlicer_1_1SHField.html#a9533a2769305f787d894ae07f8817002">setNormalized</a> (bool previous, bool normalized)</td></tr>
+<tr class="separator:a9533a2769305f787d894ae07f8817002"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3db7f3fecebc9e1b0af3be3e3d13ae9d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSlicer_1_1SHField.html#a3db7f3fecebc9e1b0af3be3e3d13ae9d">setSH0Threshold</a> (float previous, float threshold)</td></tr>
+<tr class="separator:a3db7f3fecebc9e1b0af3be3e3d13ae9d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a78141ca75afb777cea46e1e39de404e0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSlicer_1_1SHField.html#a78141ca75afb777cea46e1e39de404e0">setFadeIfHidden</a> (bool previous, bool fadeEnabled)</td></tr>
+<tr class="separator:a78141ca75afb777cea46e1e39de404e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae64473a0e5ae6ef6b990a4afc2ca5ec6"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:ae64473a0e5ae6ef6b990a4afc2ca5ec6"><td class="memTemplItemLeft" align="right" valign="top">GLuint&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classSlicer_1_1SHField.html#ae64473a0e5ae6ef6b990a4afc2ca5ec6">genVBO</a> (const std::vector&lt; T &gt; &amp;data) const</td></tr>
+<tr class="separator:ae64473a0e5ae6ef6b990a4afc2ca5ec6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:a052b9b3c7c09a35d9fc996e93cea6e7d"><td class="memItemLeft" align="right" valign="top"><a id="a052b9b3c7c09a35d9fc996e93cea6e7d"></a>
+std::mutex&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSlicer_1_1SHField.html#a052b9b3c7c09a35d9fc996e93cea6e7d">mMutex</a></td></tr>
+<tr class="memdesc:a052b9b3c7c09a35d9fc996e93cea6e7d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Mutex for multithreading. <br /></td></tr>
+<tr class="separator:a052b9b3c7c09a35d9fc996e93cea6e7d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a845859c6c1de766d731051fed14abba9"><td class="memItemLeft" align="right" valign="top"><a id="a845859c6c1de766d731051fed14abba9"></a>
+std::shared_ptr&lt; <a class="el" href="classSlicer_1_1Primitive_1_1Sphere.html">Primitive::Sphere</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSlicer_1_1SHField.html#a845859c6c1de766d731051fed14abba9">mSphere</a></td></tr>
+<tr class="memdesc:a845859c6c1de766d731051fed14abba9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sphere used for SH projection. <br /></td></tr>
+<tr class="separator:a845859c6c1de766d731051fed14abba9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ace80f92802924ad7479a2a282df83822"><td class="memItemLeft" align="right" valign="top"><a id="ace80f92802924ad7479a2a282df83822"></a>
+uint&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSlicer_1_1SHField.html#ace80f92802924ad7479a2a282df83822">mNbSpheres</a></td></tr>
+<tr class="memdesc:ace80f92802924ad7479a2a282df83822"><td class="mdescLeft">&#160;</td><td class="mdescRight">Maximum number of spheres rendered. <br /></td></tr>
+<tr class="separator:ace80f92802924ad7479a2a282df83822"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae207256f59c7756867e2ef1f3b38c841"><td class="memItemLeft" align="right" valign="top"><a id="ae207256f59c7756867e2ef1f3b38c841"></a>
+std::vector&lt; GLuint &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSlicer_1_1SHField.html#ae207256f59c7756867e2ef1f3b38c841">mIndices</a></td></tr>
+<tr class="memdesc:ae207256f59c7756867e2ef1f3b38c841"><td class="mdescLeft">&#160;</td><td class="mdescRight">Mesh triangulation for all spheres. <br /></td></tr>
+<tr class="separator:ae207256f59c7756867e2ef1f3b38c841"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a99ea4b967d58a8661d75b32730d6e3d6"><td class="memItemLeft" align="right" valign="top"><a id="a99ea4b967d58a8661d75b32730d6e3d6"></a>
+GLuint&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSlicer_1_1SHField.html#a99ea4b967d58a8661d75b32730d6e3d6">mVAO</a></td></tr>
+<tr class="memdesc:a99ea4b967d58a8661d75b32730d6e3d6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Vertex array object. <br /></td></tr>
+<tr class="separator:a99ea4b967d58a8661d75b32730d6e3d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae73f0011733f29fec098972cc1c19e60"><td class="memItemLeft" align="right" valign="top"><a id="ae73f0011733f29fec098972cc1c19e60"></a>
+GLuint&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSlicer_1_1SHField.html#ae73f0011733f29fec098972cc1c19e60">mIndicesBO</a></td></tr>
+<tr class="memdesc:ae73f0011733f29fec098972cc1c19e60"><td class="mdescLeft">&#160;</td><td class="mdescRight">Elements buffer object. <br /></td></tr>
+<tr class="separator:ae73f0011733f29fec098972cc1c19e60"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abed3db81882f95e4603aca5d58df5e26"><td class="memItemLeft" align="right" valign="top"><a id="abed3db81882f95e4603aca5d58df5e26"></a>
+GLuint&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSlicer_1_1SHField.html#abed3db81882f95e4603aca5d58df5e26">mIndirectBO</a></td></tr>
+<tr class="memdesc:abed3db81882f95e4603aca5d58df5e26"><td class="mdescLeft">&#160;</td><td class="mdescRight">DrawElementsIndirect buffer object. <br /></td></tr>
+<tr class="separator:abed3db81882f95e4603aca5d58df5e26"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aed0022fa6340e948e9306fea2dbb9ff8"><td class="memItemLeft" align="right" valign="top"><a id="aed0022fa6340e948e9306fea2dbb9ff8"></a>
+<a class="el" href="classSlicer_1_1GPU_1_1ShaderProgram.html">GPU::ShaderProgram</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSlicer_1_1SHField.html#aed0022fa6340e948e9306fea2dbb9ff8">mComputeShader</a></td></tr>
+<tr class="memdesc:aed0022fa6340e948e9306fea2dbb9ff8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compute shader for sphere deformation. <br /></td></tr>
+<tr class="separator:aed0022fa6340e948e9306fea2dbb9ff8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1d33c6cd26a4a96774d18f456422a4cd"><td class="memItemLeft" align="right" valign="top"><a id="a1d33c6cd26a4a96774d18f456422a4cd"></a>
+std::vector&lt; float &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSlicer_1_1SHField.html#a1d33c6cd26a4a96774d18f456422a4cd">mSphHarmCoeffs</a></td></tr>
+<tr class="memdesc:a1d33c6cd26a4a96774d18f456422a4cd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Spherical harmonics coefficients array. <br /></td></tr>
+<tr class="separator:a1d33c6cd26a4a96774d18f456422a4cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a05689d0c654d18bf012568a9c0701a6b"><td class="memItemLeft" align="right" valign="top"><a id="a05689d0c654d18bf012568a9c0701a6b"></a>
+<a class="el" href="classSlicer_1_1GPU_1_1ShaderData.html">GPU::ShaderData</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSlicer_1_1SHField.html#a05689d0c654d18bf012568a9c0701a6b">mSphHarmCoeffsData</a></td></tr>
+<tr class="memdesc:a05689d0c654d18bf012568a9c0701a6b"><td class="mdescLeft">&#160;</td><td class="mdescRight">SH coefficients GPU data. <br /></td></tr>
+<tr class="separator:a05689d0c654d18bf012568a9c0701a6b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4ff20e4ece01fdcc24e9bdc81ec7e203"><td class="memItemLeft" align="right" valign="top"><a id="a4ff20e4ece01fdcc24e9bdc81ec7e203"></a>
+<a class="el" href="classSlicer_1_1GPU_1_1ShaderData.html">GPU::ShaderData</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSlicer_1_1SHField.html#a4ff20e4ece01fdcc24e9bdc81ec7e203">mSphHarmFuncsData</a></td></tr>
+<tr class="memdesc:a4ff20e4ece01fdcc24e9bdc81ec7e203"><td class="mdescLeft">&#160;</td><td class="mdescRight">SH functions GPU data. <br /></td></tr>
+<tr class="separator:a4ff20e4ece01fdcc24e9bdc81ec7e203"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a022cc228c4454fb275aa070e8f39bf00"><td class="memItemLeft" align="right" valign="top"><a id="a022cc228c4454fb275aa070e8f39bf00"></a>
+<a class="el" href="classSlicer_1_1GPU_1_1ShaderData.html">GPU::ShaderData</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSlicer_1_1SHField.html#a022cc228c4454fb275aa070e8f39bf00">mGridInfoData</a></td></tr>
+<tr class="memdesc:a022cc228c4454fb275aa070e8f39bf00"><td class="mdescLeft">&#160;</td><td class="mdescRight">Voxel grid GPU data. <br /></td></tr>
+<tr class="separator:a022cc228c4454fb275aa070e8f39bf00"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5ef4f9a877a6fb58111cb1b5976f4884"><td class="memItemLeft" align="right" valign="top"><a id="a5ef4f9a877a6fb58111cb1b5976f4884"></a>
+<a class="el" href="classSlicer_1_1GPU_1_1ShaderData.html">GPU::ShaderData</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSlicer_1_1SHField.html#a5ef4f9a877a6fb58111cb1b5976f4884">mSphereVerticesData</a></td></tr>
+<tr class="memdesc:a5ef4f9a877a6fb58111cb1b5976f4884"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sphere vertices GPU data. <br /></td></tr>
+<tr class="separator:a5ef4f9a877a6fb58111cb1b5976f4884"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a48dae164ae0849f0774d78e22a40839f"><td class="memItemLeft" align="right" valign="top"><a id="a48dae164ae0849f0774d78e22a40839f"></a>
+<a class="el" href="classSlicer_1_1GPU_1_1ShaderData.html">GPU::ShaderData</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSlicer_1_1SHField.html#a48dae164ae0849f0774d78e22a40839f">mSphereIndicesData</a></td></tr>
+<tr class="memdesc:a48dae164ae0849f0774d78e22a40839f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sphere triangulation (indices) GPU data. <br /></td></tr>
+<tr class="separator:a48dae164ae0849f0774d78e22a40839f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac01db9abb12903bc9a70f94cacd7ed0b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classSlicer_1_1GPU_1_1ShaderData.html">GPU::ShaderData</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSlicer_1_1SHField.html#ac01db9abb12903bc9a70f94cacd7ed0b">mSphereInfoData</a></td></tr>
+<tr class="separator:ac01db9abb12903bc9a70f94cacd7ed0b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6e8dd7230361ceb40636c777122fd2f2"><td class="memItemLeft" align="right" valign="top"><a id="a6e8dd7230361ceb40636c777122fd2f2"></a>
+<a class="el" href="classSlicer_1_1GPU_1_1ShaderData.html">GPU::ShaderData</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSlicer_1_1SHField.html#a6e8dd7230361ceb40636c777122fd2f2">mAllRadiisData</a></td></tr>
+<tr class="memdesc:a6e8dd7230361ceb40636c777122fd2f2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Glyphs radiis GPU data. <br /></td></tr>
+<tr class="separator:a6e8dd7230361ceb40636c777122fd2f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adda6d719735190bebfe917b122e6b439"><td class="memItemLeft" align="right" valign="top"><a id="adda6d719735190bebfe917b122e6b439"></a>
+<a class="el" href="classSlicer_1_1GPU_1_1ShaderData.html">GPU::ShaderData</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSlicer_1_1SHField.html#adda6d719735190bebfe917b122e6b439">mAllSpheresNormalsData</a></td></tr>
+<tr class="memdesc:adda6d719735190bebfe917b122e6b439"><td class="mdescLeft">&#160;</td><td class="mdescRight">Glyphs normals GPU data. <br /></td></tr>
+<tr class="separator:adda6d719735190bebfe917b122e6b439"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a727eebf90dd7229f65f132ff10b838d1"><td class="memItemLeft" align="right" valign="top"><a id="a727eebf90dd7229f65f132ff10b838d1"></a>
+<a class="el" href="classSlicer_1_1GPU_1_1ShaderData.html">GPU::ShaderData</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSlicer_1_1SHField.html#a727eebf90dd7229f65f132ff10b838d1">mAllOrdersData</a></td></tr>
+<tr class="memdesc:a727eebf90dd7229f65f132ff10b838d1"><td class="mdescLeft">&#160;</td><td class="mdescRight">All SH orders, repeated. <br /></td></tr>
+<tr class="separator:a727eebf90dd7229f65f132ff10b838d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a94a698b6c6031823d6b39f984309e3ea"><td class="memItemLeft" align="right" valign="top"><a id="a94a698b6c6031823d6b39f984309e3ea"></a>
+std::vector&lt; <a class="el" href="structSlicer_1_1DrawElementsIndirectCommand.html">DrawElementsIndirectCommand</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSlicer_1_1SHField.html#a94a698b6c6031823d6b39f984309e3ea">mIndirectCmd</a></td></tr>
+<tr class="memdesc:a94a698b6c6031823d6b39f984309e3ea"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="structSlicer_1_1DrawElementsIndirectCommand.html" title="Struct for glMultiDrawElementsIndirect command.">DrawElementsIndirectCommand</a> array. <br /></td></tr>
+<tr class="separator:a94a698b6c6031823d6b39f984309e3ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
@@ -191,6 +306,106 @@ std::shared_ptr&lt; <a class="el" href="classSlicer_1_1ApplicationState.html">Ap
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a id="a33ad67c6cbbaa2781a1f2fd3e1bb6bba"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a33ad67c6cbbaa2781a1f2fd3e1bb6bba">&#9670;&nbsp;</a></span>copySubsetSHCoefficientsFromImage()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Slicer::SHField::copySubsetSHCoefficientsFromImage </td>
+          <td>(</td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>firstIndex</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>lastIndex</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Copy a subset of the SH coefficients from the image to contiguous array for GPU. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">firstIndex</td><td>Index (flat) of the first coefficient to copy. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">lastIndex</td><td>Index (exclusive) of the last coefficient to copy. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="abd7d42944cd54659e46bf4047ec42753"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abd7d42944cd54659e46bf4047ec42753">&#9670;&nbsp;</a></span>dispatchSubsetCommands()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Slicer::SHField::dispatchSubsetCommands </td>
+          <td>(</td>
+          <td class="paramtype">void(SHField::*)(size_t, size_t)&#160;</td>
+          <td class="paramname"><em>fn</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>nbElements</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>nbThreads</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::vector&lt; std::thread &gt; &amp;&#160;</td>
+          <td class="paramname"><em>threads</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Dispatch some method for filling arrays in parallel. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">fn</td><td>Pointer to member function to call. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">nbElements</td><td>Number of elements to fill. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">nbThreads</td><td>Number of threads to use. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">threads</td><td>Vector of threads. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="ac786440d1d3bd2433ebe9d02bf8fdcb5"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ac786440d1d3bd2433ebe9d02bf8fdcb5">&#9670;&nbsp;</a></span>drawSpecific()</h2>
 
@@ -216,6 +431,112 @@ std::shared_ptr&lt; <a class="el" href="classSlicer_1_1ApplicationState.html">Ap
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="classSlicer_1_1Model.html#ac196286d08715e9f0b77ec28c6d0a7e1" title="Pure virtual function describing how to draw this object.">Model::drawSpecific()</a> </dd></dl>
 
 <p>Implements <a class="el" href="classSlicer_1_1Model.html#ac196286d08715e9f0b77ec28c6d0a7e1">Slicer::Model</a>.</p>
+
+</div>
+</div>
+<a id="ae64473a0e5ae6ef6b990a4afc2ca5ec6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae64473a0e5ae6ef6b990a4afc2ca5ec6">&#9670;&nbsp;</a></span>genVBO()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">GLuint Slicer::SHField::genVBO </td>
+          <td>(</td>
+          <td class="paramtype">const std::vector&lt; T &gt; &amp;&#160;</td>
+          <td class="paramname"><em>data</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Generate a vertex buffer object for data. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">data</td><td>The data to send to the GPU. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>VBO index. </dd></dl>
+
+</div>
+</div>
+<a id="ac4fdd4474bd20f8f73cd318acde81fca"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac4fdd4474bd20f8f73cd318acde81fca">&#9670;&nbsp;</a></span>initializeMembers()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Slicer::SHField::initializeMembers </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Initialize class members. </p>
+<p>Calls copySHCoefficientsFromImage() and initializeDrawCommand() on different threads. </p>
+
+</div>
+</div>
+<a id="a2d3ab597986a3c5e3ae644a3f9d30074"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2d3ab597986a3c5e3ae644a3f9d30074">&#9670;&nbsp;</a></span>initializeSubsetDrawCommand()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Slicer::SHField::initializeSubsetDrawCommand </td>
+          <td>(</td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>firstIndex</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>lastIndex</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Initialize a subset of the Draw commands, used for instancing. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">firstIndex</td><td>Index (flat) of the first sphere to initialize. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">lastIndex</td><td>Index (exclusive) of the last sphere to initialize. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -275,6 +596,221 @@ std::shared_ptr&lt; <a class="el" href="classSlicer_1_1ApplicationState.html">Ap
 
 </div>
 </div>
+<a id="a78141ca75afb777cea46e1e39de404e0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a78141ca75afb777cea46e1e39de404e0">&#9670;&nbsp;</a></span>setFadeIfHidden()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Slicer::SHField::setFadeIfHidden </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>previous</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>fadeEnabled</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Toggle fading of hidden objects. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">previous</td><td>Previous value. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">fadeEnabled</td><td>New value for fading behaviour. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a9533a2769305f787d894ae07f8817002"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9533a2769305f787d894ae07f8817002">&#9670;&nbsp;</a></span>setNormalized()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Slicer::SHField::setNormalized </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>previous</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>normalized</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Toggle per-voxel SH normalization by maximum radius. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">previous</td><td>Previous value. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">normalized</td><td>True to normalize SH by maximum radius. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a3db7f3fecebc9e1b0af3be3e3d13ae9d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3db7f3fecebc9e1b0af3be3e3d13ae9d">&#9670;&nbsp;</a></span>setSH0Threshold()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Slicer::SHField::setSH0Threshold </td>
+          <td>(</td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>previous</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>threshold</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Set the threshold on 0th SH coefficient. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">previous</td><td>Previous 0th SH threshold. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">threshold</td><td>New SH0 threshold. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a349baa1d65b2bf86ceaa1ea9fc4dcbff"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a349baa1d65b2bf86ceaa1ea9fc4dcbff">&#9670;&nbsp;</a></span>setSliceIndex()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Slicer::SHField::setSliceIndex </td>
+          <td>(</td>
+          <td class="paramtype">glm::vec3&#160;</td>
+          <td class="paramname"><em>previous</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">glm::vec3&#160;</td>
+          <td class="paramname"><em>indices</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Set the 3D slice index. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">previous</td><td>Previous slice index. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">indices</td><td>New slice index. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a3ba99fc210cc7817b17d48363b1f79d1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3ba99fc210cc7817b17d48363b1f79d1">&#9670;&nbsp;</a></span>setSphereScaling()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Slicer::SHField::setSphereScaling </td>
+          <td>(</td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>previous</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>scaling</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Set sphere scaling. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">previous</td><td>Previous scaling multiplier. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">scaling</td><td>New scaling. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="a38d8014fec896b243fa2d8198581f8d1"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a38d8014fec896b243fa2d8198581f8d1">&#9670;&nbsp;</a></span>updateApplicationStateAtInit()</h2>
 
@@ -300,6 +836,30 @@ std::shared_ptr&lt; <a class="el" href="classSlicer_1_1ApplicationState.html">Ap
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="classSlicer_1_1Model.html#a3c548b2a5792c4db5fe349fe9de1e531">Model::updateApplicationStateAtInit()</a> </dd></dl>
 
 <p>Implements <a class="el" href="classSlicer_1_1Model.html#a3c548b2a5792c4db5fe349fe9de1e531">Slicer::Model</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="ac01db9abb12903bc9a70f94cacd7ed0b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac01db9abb12903bc9a70f94cacd7ed0b">&#9670;&nbsp;</a></span>mSphereInfoData</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classSlicer_1_1GPU_1_1ShaderData.html">GPU::ShaderData</a> Slicer::SHField::mSphereInfoData</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Sphere parameters GPU data. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="structSlicer_1_1SHField_1_1SphereData.html">SphereData</a> </dd></dl>
 
 </div>
 </div>

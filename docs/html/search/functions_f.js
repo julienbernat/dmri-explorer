@@ -1,8 +1,9 @@
 var searchData=
 [
-  ['uimanager_206',['UIManager',['../classSlicer_1_1UIManager.html#aeda41826c9042b0e05b7873337fc2348',1,'Slicer::UIManager::UIManager()'],['../classSlicer_1_1UIManager.html#a3543fb07c6322e9f27a442dec95c8d09',1,'Slicer::UIManager::UIManager(GLFWwindow *window, const std::string &amp;glslVersion, const std::shared_ptr&lt; ApplicationState &gt; &amp;state)']]],
-  ['unravelindex3d_207',['unravelIndex3d',['../classSlicer_1_1NiftiImageWrapper.html#a86a4834aa2a7610cc1fbc8cfd8902e59',1,'Slicer::NiftiImageWrapper']]],
-  ['update_208',['Update',['../classSlicer_1_1ApplicationParameter.html#a71bc83cf907c5db00b42ef4d85d5a249',1,'Slicer::ApplicationParameter::Update()'],['../classSlicer_1_1GPU_1_1ShaderData.html#a722a06029fe5ebddadda1c2f05f81681',1,'Slicer::GPU::ShaderData::Update()']]],
-  ['updateapplicationstateatinit_209',['updateApplicationStateAtInit',['../classSlicer_1_1Model.html#a3c548b2a5792c4db5fe349fe9de1e531',1,'Slicer::Model::updateApplicationStateAtInit()'],['../classSlicer_1_1SHField.html#a38d8014fec896b243fa2d8198581f8d1',1,'Slicer::SHField::updateApplicationStateAtInit()']]],
-  ['updategpu_210',['UpdateGPU',['../classSlicer_1_1Camera.html#a64866a86dced6f3cf4f9331272e18be6',1,'Slicer::Camera']]]
+  ['terminate_348',['Terminate',['../classSlicer_1_1UIManager.html#a66775e710eb47b99b7ffd43c93bf837d',1,'Slicer::UIManager']]],
+  ['timer_349',['Timer',['../classSlicer_1_1Utilities_1_1Timer.html#aec15b7d1caebdf4125e67aad201652a8',1,'Slicer::Utilities::Timer::Timer()'],['../classSlicer_1_1Utilities_1_1Timer.html#a4ce8906607fff4e263d74d8b1fb66f21',1,'Slicer::Utilities::Timer::Timer(const std::string &amp;label)']]],
+  ['togpu_350',['ToGPU',['../classSlicer_1_1GPU_1_1ShaderData.html#a2b7854fb097d304a2b8b1bc2ceda7fdb',1,'Slicer::GPU::ShaderData']]],
+  ['toworld_351',['ToWorld',['../classSlicer_1_1CoordinateSystem.html#a948a7a7e592d3336781f4081870d1029',1,'Slicer::CoordinateSystem']]],
+  ['translatecs_352',['TranslateCS',['../classSlicer_1_1Scene.html#a46bbbded37709cc377e345812952ef6d',1,'Slicer::Scene']]],
+  ['type_353',['Type',['../classSlicer_1_1GPU_1_1ShaderProgram.html#a8795fdf7377e36bd7aaddfca16955ed4',1,'Slicer::GPU::ShaderProgram']]]
 ];

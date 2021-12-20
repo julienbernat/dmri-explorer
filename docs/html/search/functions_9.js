@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['nbvox_177',['nbVox',['../classSlicer_1_1NiftiImageWrapper.html#a9bb1f660efcec098cf20210ce829392e',1,'Slicer::NiftiImageWrapper']]],
-  ['niftiimagewrapper_178',['NiftiImageWrapper',['../classSlicer_1_1NiftiImageWrapper.html#a90ffcfbde5e57578b5cabe38efee22b7',1,'Slicer::NiftiImageWrapper::NiftiImageWrapper()'],['../classSlicer_1_1NiftiImageWrapper.html#ac8d0aded81be110766cebe8de8d24459',1,'Slicer::NiftiImageWrapper::NiftiImageWrapper(const std::string &amp;path)']]]
+  ['model_311',['Model',['../classSlicer_1_1Model.html#af3ac17a83308a18d87fb23491d2dfb16',1,'Slicer::Model::Model()=default'],['../classSlicer_1_1Model.html#a7f200d78b27357dceb2a92193b020746',1,'Slicer::Model::Model(const std::shared_ptr&lt; ApplicationState &gt; &amp;state)']]]
 ];

@@ -68,6 +68,8 @@ $(function() {
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pri-methods">Private Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="classSlicer_1_1SH_1_1DescoteauxBasis-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">Slicer::SH::DescoteauxBasis Class Reference</div>  </div>
@@ -99,6 +101,34 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a62faebe00d095421f720713b4af44413"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aeeca56f63ad74f7c2e783dada354b450"><td class="memItemLeft" align="right" valign="top">std::vector&lt; float &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSlicer_1_1SH_1_1DescoteauxBasis.html#aeeca56f63ad74f7c2e783dada354b450">GetOrderList</a> () const</td></tr>
 <tr class="separator:aeeca56f63ad74f7c2e783dada354b450"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
+Private Member Functions</h2></td></tr>
+<tr class="memitem:afcb82e494bd932fd2213249475684649"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSlicer_1_1SH_1_1DescoteauxBasis.html#afcb82e494bd932fd2213249475684649">getOrderFromNbCoeffs</a> (unsigned int nbCoeffs, bool *fullBasis) const</td></tr>
+<tr class="separator:afcb82e494bd932fd2213249475684649"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aec129910f42ed7076acfe12d4a6d250d"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSlicer_1_1SH_1_1DescoteauxBasis.html#aec129910f42ed7076acfe12d4a6d250d">J</a> (unsigned int l, int m) const</td></tr>
+<tr class="separator:aec129910f42ed7076acfe12d4a6d250d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a05c2fc0a69a30109aaaf236c92e4be98"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSlicer_1_1SH_1_1DescoteauxBasis.html#a05c2fc0a69a30109aaaf236c92e4be98">numCoeffs</a> () const</td></tr>
+<tr class="separator:a05c2fc0a69a30109aaaf236c92e4be98"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3638561c5a4e13d30842d5a8ff0c465c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSlicer_1_1SH_1_1DescoteauxBasis.html#a3638561c5a4e13d30842d5a8ff0c465c">computeScaling</a> ()</td></tr>
+<tr class="separator:a3638561c5a4e13d30842d5a8ff0c465c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abdcdb1d7267356b7f2cd02386d807bfd"><td class="memItemLeft" align="right" valign="top">std::complex&lt; float &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSlicer_1_1SH_1_1DescoteauxBasis.html#abdcdb1d7267356b7f2cd02386d807bfd">computeSHFunc</a> (unsigned int l, int m, float theta, float phi) const</td></tr>
+<tr class="separator:abdcdb1d7267356b7f2cd02386d807bfd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:a215b4fa2328763032e0bc024a708ca26"><td class="memItemLeft" align="right" valign="top"><a id="a215b4fa2328763032e0bc024a708ca26"></a>
+std::vector&lt; float &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSlicer_1_1SH_1_1DescoteauxBasis.html#a215b4fa2328763032e0bc024a708ca26">mScaling</a></td></tr>
+<tr class="memdesc:a215b4fa2328763032e0bc024a708ca26"><td class="mdescLeft">&#160;</td><td class="mdescRight">Precomputed scaling for SH functions. <br /></td></tr>
+<tr class="separator:a215b4fa2328763032e0bc024a708ca26"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab28f0a1df28fed752049a9e75902867b"><td class="memItemLeft" align="right" valign="top"><a id="ab28f0a1df28fed752049a9e75902867b"></a>
+uint&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSlicer_1_1SH_1_1DescoteauxBasis.html#ab28f0a1df28fed752049a9e75902867b">mMaxOrder</a></td></tr>
+<tr class="memdesc:ab28f0a1df28fed752049a9e75902867b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Maximum SH order. <br /></td></tr>
+<tr class="separator:ab28f0a1df28fed752049a9e75902867b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a488944fefe52884dfb3e0f329a217747"><td class="memItemLeft" align="right" valign="top"><a id="a488944fefe52884dfb3e0f329a217747"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSlicer_1_1SH_1_1DescoteauxBasis.html#a488944fefe52884dfb3e0f329a217747">mFullBasis</a></td></tr>
+<tr class="memdesc:a488944fefe52884dfb3e0f329a217747"><td class="mdescLeft">&#160;</td><td class="mdescRight">Full basis flag. When true, basis includes odd order SH functions. <br /></td></tr>
+<tr class="separator:a488944fefe52884dfb3e0f329a217747"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Implementation of DIPY legacy real Descoteaux07 basis. </p>
@@ -215,6 +245,91 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="a3638561c5a4e13d30842d5a8ff0c465c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3638561c5a4e13d30842d5a8ff0c465c">&#9670;&nbsp;</a></span>computeScaling()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Slicer::SH::DescoteauxBasis::computeScaling </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Pre-compute the scaling of SH functions.</p>
+<p>Will be used by computeSHFunc to gain speed. </p><dl class="section see"><dt>See also</dt><dd>computeSHFunc(unsigned int, int, float, float) </dd></dl>
+
+</div>
+</div>
+<a id="abdcdb1d7267356b7f2cd02386d807bfd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abdcdb1d7267356b7f2cd02386d807bfd">&#9670;&nbsp;</a></span>computeSHFunc()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::complex&lt; float &gt; Slicer::SH::DescoteauxBasis::computeSHFunc </td>
+          <td>(</td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>l</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>m</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>theta</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>phi</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Compute the complex SH function at l, m, theta, phi. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">l</td><td>SH function order (0 &lt;= l &lt;= mMaxOrder). </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">m</td><td>SH function degree (-l &lt;= m &lt;= l). </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">theta</td><td>Inclination angle in radians. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">phi</td><td>Azimuth angle in radians. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Complex SH function evaluated for l, m, theta, phi. </dd></dl>
+
+</div>
+</div>
 <a id="a62faebe00d095421f720713b4af44413"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a62faebe00d095421f720713b4af44413">&#9670;&nbsp;</a></span>GetMaxOrder()</h2>
 
@@ -241,6 +356,50 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="afcb82e494bd932fd2213249475684649"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afcb82e494bd932fd2213249475684649">&#9670;&nbsp;</a></span>getOrderFromNbCoeffs()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned int Slicer::SH::DescoteauxBasis::getOrderFromNbCoeffs </td>
+          <td>(</td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>nbCoeffs</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool *&#160;</td>
+          <td class="paramname"><em>fullBasis</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Get the maximum order from the number of SH coefficients. Also detects if the basis is full if fullBasis is supplied. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">nbCoeffs</td><td>Number of SH coefficients and functions. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">fullBasis</td><td>When not nullptr, contains true if the basis is full. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The maximum order from the number of SH coefficients. </dd></dl>
+
+</div>
+</div>
 <a id="aeeca56f63ad74f7c2e783dada354b450"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aeeca56f63ad74f7c2e783dada354b450">&#9670;&nbsp;</a></span>GetOrderList()</h2>
 
@@ -256,6 +415,76 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Get the list of SH orders. </p><dl class="section return"><dt>Returns</dt><dd>A vector containing all SH orders, repeated. </dd></dl>
+
+</div>
+</div>
+<a id="aec129910f42ed7076acfe12d4a6d250d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aec129910f42ed7076acfe12d4a6d250d">&#9670;&nbsp;</a></span>J()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">size_t Slicer::SH::DescoteauxBasis::J </td>
+          <td>(</td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>l</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>m</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Get the flattened index for order l and degree m. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">l</td><td>SH order (0 &lt;= l &lt;= mMaxOrder). </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">m</td><td>SH degree (-l &lt;= m &lt;= l). </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Flattened index. </dd></dl>
+
+</div>
+</div>
+<a id="a05c2fc0a69a30109aaaf236c92e4be98"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a05c2fc0a69a30109aaaf236c92e4be98">&#9670;&nbsp;</a></span>numCoeffs()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">size_t Slicer::SH::DescoteauxBasis::numCoeffs </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Get the number of SH coefficients for basis. </p><dl class="section return"><dt>Returns</dt><dd>Number of SH coefficients. </dd></dl>
 
 </div>
 </div>

@@ -68,6 +68,8 @@ $(function() {
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pri-methods">Private Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="classSlicer_1_1ApplicationParameter-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">Slicer::ApplicationParameter&lt; T &gt; Class Template Reference</div>  </div>
@@ -95,6 +97,26 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:aeb459f6aeb903b4818dda4c3b3ffb069"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2bf1802aacf31afbc6bdc05152ee941c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSlicer_1_1ApplicationParameter.html#a2bf1802aacf31afbc6bdc05152ee941c">IsInit</a> () const</td></tr>
 <tr class="separator:a2bf1802aacf31afbc6bdc05152ee941c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
+Private Member Functions</h2></td></tr>
+<tr class="memitem:ab8744a6b239b08af9dfcba76e77d5489"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSlicer_1_1ApplicationParameter.html#ab8744a6b239b08af9dfcba76e77d5489">onChange</a> (const T &amp;old) const</td></tr>
+<tr class="separator:ab8744a6b239b08af9dfcba76e77d5489"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:aeb34f6e59125005cf779ec004382886e"><td class="memItemLeft" align="right" valign="top"><a id="aeb34f6e59125005cf779ec004382886e"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSlicer_1_1ApplicationParameter.html#aeb34f6e59125005cf779ec004382886e">mIsInit</a></td></tr>
+<tr class="memdesc:aeb34f6e59125005cf779ec004382886e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Is the value initialized? <br /></td></tr>
+<tr class="separator:aeb34f6e59125005cf779ec004382886e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a576b6c3d68043f805420ccacd7a5ab59"><td class="memItemLeft" align="right" valign="top"><a id="a576b6c3d68043f805420ccacd7a5ab59"></a>
+T&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSlicer_1_1ApplicationParameter.html#a576b6c3d68043f805420ccacd7a5ab59">mValue</a></td></tr>
+<tr class="memdesc:a576b6c3d68043f805420ccacd7a5ab59"><td class="mdescLeft">&#160;</td><td class="mdescRight">The value associated to this object. <br /></td></tr>
+<tr class="separator:a576b6c3d68043f805420ccacd7a5ab59"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a102d8aeb7d6d3d49d54f0a60a6ccf9ee"><td class="memItemLeft" align="right" valign="top"><a id="a102d8aeb7d6d3d49d54f0a60a6ccf9ee"></a>
+std::vector&lt; std::function&lt; void(T, T)&gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSlicer_1_1ApplicationParameter.html#a102d8aeb7d6d3d49d54f0a60a6ccf9ee">mCallbacks</a></td></tr>
+<tr class="memdesc:a102d8aeb7d6d3d49d54f0a60a6ccf9ee"><td class="mdescLeft">&#160;</td><td class="mdescRight">Callbacks to call when updating the value of this object. <br /></td></tr>
+<tr class="separator:a102d8aeb7d6d3d49d54f0a60a6ccf9ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><h3>template&lt;typename T&gt;<br />
@@ -191,6 +213,40 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 <p>Check if the value field is initialized. </p><dl class="section return"><dt>Returns</dt><dd>True if the value field is initialized. </dd></dl>
+
+</div>
+</div>
+<a id="ab8744a6b239b08af9dfcba76e77d5489"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab8744a6b239b08af9dfcba76e77d5489">&#9670;&nbsp;</a></span>onChange()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classSlicer_1_1ApplicationParameter.html">Slicer::ApplicationParameter</a>&lt; T &gt;::onChange </td>
+          <td>(</td>
+          <td class="paramtype">const T &amp;&#160;</td>
+          <td class="paramname"><em>old</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Call all callbacks registered to this object. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">old</td><td>Previous value associated to the parameter. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>

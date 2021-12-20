@@ -69,6 +69,7 @@ $(function() {
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="classSlicer_1_1Camera-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">Slicer::Camera Class Reference</div>  </div>
@@ -80,6 +81,12 @@ $(function() {
 
 <p><code>#include &lt;<a class="el" href="camera_8h_source.html">camera.h</a>&gt;</code></p>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structSlicer_1_1Camera_1_1CameraData.html">CameraData</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Struct containing camera attributes to push on the GPU.  <a href="structSlicer_1_1Camera_1_1CameraData.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a9fc610ef4b46592aaf7e708bfa2ddd72"><td class="memItemLeft" align="right" valign="top"><a id="a9fc610ef4b46592aaf7e708bfa2ddd72"></a>
@@ -96,6 +103,53 @@ Public Member Functions</h2></td></tr>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSlicer_1_1Camera.html#a64866a86dced6f3cf4f9331272e18be6">UpdateGPU</a> ()</td></tr>
 <tr class="memdesc:a64866a86dced6f3cf4f9331272e18be6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update camera attributes on the GPU. <br /></td></tr>
 <tr class="separator:a64866a86dced6f3cf4f9331272e18be6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:a3810bcc54f98bea81cb0da77855cb5e0"><td class="memItemLeft" align="right" valign="top"><a id="a3810bcc54f98bea81cb0da77855cb5e0"></a>
+glm::vec3&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSlicer_1_1Camera.html#a3810bcc54f98bea81cb0da77855cb5e0">mPosition</a></td></tr>
+<tr class="memdesc:a3810bcc54f98bea81cb0da77855cb5e0"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classSlicer_1_1Camera.html" title="Class for camera object.">Camera</a> position. <br /></td></tr>
+<tr class="separator:a3810bcc54f98bea81cb0da77855cb5e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad42e61580e334a37be59ef211e8b3ded"><td class="memItemLeft" align="right" valign="top"><a id="ad42e61580e334a37be59ef211e8b3ded"></a>
+glm::vec3&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSlicer_1_1Camera.html#ad42e61580e334a37be59ef211e8b3ded">mLookAt</a></td></tr>
+<tr class="memdesc:ad42e61580e334a37be59ef211e8b3ded"><td class="mdescLeft">&#160;</td><td class="mdescRight">The point at the center of the camera view. <br /></td></tr>
+<tr class="separator:ad42e61580e334a37be59ef211e8b3ded"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6ec812d7d2a3fe77e8453e97398bff47"><td class="memItemLeft" align="right" valign="top"><a id="a6ec812d7d2a3fe77e8453e97398bff47"></a>
+glm::vec3&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSlicer_1_1Camera.html#a6ec812d7d2a3fe77e8453e97398bff47">mUpVector</a></td></tr>
+<tr class="memdesc:a6ec812d7d2a3fe77e8453e97398bff47"><td class="mdescLeft">&#160;</td><td class="mdescRight">Up vector. <br /></td></tr>
+<tr class="separator:a6ec812d7d2a3fe77e8453e97398bff47"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a06fc5b92756224065a7749a3263f10d5"><td class="memItemLeft" align="right" valign="top"><a id="a06fc5b92756224065a7749a3263f10d5"></a>
+float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSlicer_1_1Camera.html#a06fc5b92756224065a7749a3263f10d5">mFov</a></td></tr>
+<tr class="memdesc:a06fc5b92756224065a7749a3263f10d5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Field of view. <br /></td></tr>
+<tr class="separator:a06fc5b92756224065a7749a3263f10d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a324f2f8222c085e8436372b819f21c9c"><td class="memItemLeft" align="right" valign="top"><a id="a324f2f8222c085e8436372b819f21c9c"></a>
+float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSlicer_1_1Camera.html#a324f2f8222c085e8436372b819f21c9c">mNear</a></td></tr>
+<tr class="memdesc:a324f2f8222c085e8436372b819f21c9c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Near clipping plane. <br /></td></tr>
+<tr class="separator:a324f2f8222c085e8436372b819f21c9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aea487631d90f3a87360da2f68bbeaefe"><td class="memItemLeft" align="right" valign="top"><a id="aea487631d90f3a87360da2f68bbeaefe"></a>
+float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSlicer_1_1Camera.html#aea487631d90f3a87360da2f68bbeaefe">mFar</a></td></tr>
+<tr class="memdesc:aea487631d90f3a87360da2f68bbeaefe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Far clipping plane. <br /></td></tr>
+<tr class="separator:aea487631d90f3a87360da2f68bbeaefe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad41a3eb4ca0d06049033739f087d9e08"><td class="memItemLeft" align="right" valign="top"><a id="ad41a3eb4ca0d06049033739f087d9e08"></a>
+float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSlicer_1_1Camera.html#ad41a3eb4ca0d06049033739f087d9e08">mAspect</a></td></tr>
+<tr class="memdesc:ad41a3eb4ca0d06049033739f087d9e08"><td class="mdescLeft">&#160;</td><td class="mdescRight">Window aspect ratio. <br /></td></tr>
+<tr class="separator:ad41a3eb4ca0d06049033739f087d9e08"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a89f23e71609aa91d3ef0ec34492011c5"><td class="memItemLeft" align="right" valign="top"><a id="a89f23e71609aa91d3ef0ec34492011c5"></a>
+glm::mat4&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSlicer_1_1Camera.html#a89f23e71609aa91d3ef0ec34492011c5">mProjectionMatrix</a></td></tr>
+<tr class="memdesc:a89f23e71609aa91d3ef0ec34492011c5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Projection matrix. <br /></td></tr>
+<tr class="separator:a89f23e71609aa91d3ef0ec34492011c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac8ba97bfa5e0f15d811b658293126643"><td class="memItemLeft" align="right" valign="top"><a id="ac8ba97bfa5e0f15d811b658293126643"></a>
+glm::mat4&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSlicer_1_1Camera.html#ac8ba97bfa5e0f15d811b658293126643">mViewMatrix</a></td></tr>
+<tr class="memdesc:ac8ba97bfa5e0f15d811b658293126643"><td class="mdescLeft">&#160;</td><td class="mdescRight">View matrix. <br /></td></tr>
+<tr class="separator:ac8ba97bfa5e0f15d811b658293126643"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8e3c3498c2762f8dcff2771301482b52"><td class="memItemLeft" align="right" valign="top"><a id="a8e3c3498c2762f8dcff2771301482b52"></a>
+std::shared_ptr&lt; <a class="el" href="classSlicer_1_1ApplicationState.html">ApplicationState</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSlicer_1_1Camera.html#a8e3c3498c2762f8dcff2771301482b52">mState</a></td></tr>
+<tr class="memdesc:a8e3c3498c2762f8dcff2771301482b52"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pointer to the <a class="el" href="classSlicer_1_1ApplicationState.html" title="Class containing global parameters for the application.">ApplicationState</a>, containing global parameters. <br /></td></tr>
+<tr class="separator:a8e3c3498c2762f8dcff2771301482b52"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a95dc98064759edaa5142f5d413bfa095"><td class="memItemLeft" align="right" valign="top"><a id="a95dc98064759edaa5142f5d413bfa095"></a>
+<a class="el" href="classSlicer_1_1GPU_1_1ShaderData.html">GPU::ShaderData</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSlicer_1_1Camera.html#a95dc98064759edaa5142f5d413bfa095">mCamParamsData</a></td></tr>
+<tr class="memdesc:a95dc98064759edaa5142f5d413bfa095"><td class="mdescLeft">&#160;</td><td class="mdescRight">Shader data for camera attributes. <br /></td></tr>
+<tr class="separator:a95dc98064759edaa5142f5d413bfa095"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Class for camera object. </p>

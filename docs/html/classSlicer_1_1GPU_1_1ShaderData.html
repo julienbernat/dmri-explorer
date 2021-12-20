@@ -68,6 +68,7 @@ $(function() {
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="classSlicer_1_1GPU_1_1ShaderData-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">Slicer::GPU::ShaderData Class Reference</div>  </div>
@@ -99,6 +100,29 @@ Public Member Functions</h2></td></tr>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSlicer_1_1GPU_1_1ShaderData.html#a2b7854fb097d304a2b8b1bc2ceda7fdb">ToGPU</a> ()</td></tr>
 <tr class="memdesc:a2b7854fb097d304a2b8b1bc2ceda7fdb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copy SSBO to the GPU. <br /></td></tr>
 <tr class="separator:a2b7854fb097d304a2b8b1bc2ceda7fdb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:a95f4dd215025b69725fdef1094522b26"><td class="memItemLeft" align="right" valign="top"><a id="a95f4dd215025b69725fdef1094522b26"></a>
+GLuint&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSlicer_1_1GPU_1_1ShaderData.html#a95f4dd215025b69725fdef1094522b26">mSSBO</a></td></tr>
+<tr class="memdesc:a95f4dd215025b69725fdef1094522b26"><td class="mdescLeft">&#160;</td><td class="mdescRight">SSBO identifier. <br /></td></tr>
+<tr class="separator:a95f4dd215025b69725fdef1094522b26"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a933ab31a84d13b7162fdb520971f3200"><td class="memItemLeft" align="right" valign="top"><a id="a933ab31a84d13b7162fdb520971f3200"></a>
+GLenum&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSlicer_1_1GPU_1_1ShaderData.html#a933ab31a84d13b7162fdb520971f3200">mUsage</a></td></tr>
+<tr class="memdesc:a933ab31a84d13b7162fdb520971f3200"><td class="mdescLeft">&#160;</td><td class="mdescRight">Usage qualifier. <br /></td></tr>
+<tr class="separator:a933ab31a84d13b7162fdb520971f3200"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a07b9e9e27f1d8cc3b59c4a8859a7d45f"><td class="memItemLeft" align="right" valign="top"><a id="a07b9e9e27f1d8cc3b59c4a8859a7d45f"></a>
+Binding&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSlicer_1_1GPU_1_1ShaderData.html#a07b9e9e27f1d8cc3b59c4a8859a7d45f">mBinding</a></td></tr>
+<tr class="memdesc:a07b9e9e27f1d8cc3b59c4a8859a7d45f"><td class="mdescLeft">&#160;</td><td class="mdescRight">GPU binding. <br /></td></tr>
+<tr class="separator:a07b9e9e27f1d8cc3b59c4a8859a7d45f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aed1a43f9fa96bc9d411b97f495291eeb"><td class="memItemLeft" align="right" valign="top"><a id="aed1a43f9fa96bc9d411b97f495291eeb"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSlicer_1_1GPU_1_1ShaderData.html#aed1a43f9fa96bc9d411b97f495291eeb">mIsDirty</a></td></tr>
+<tr class="memdesc:aed1a43f9fa96bc9d411b97f495291eeb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Is the object dirty? <br /></td></tr>
+<tr class="separator:aed1a43f9fa96bc9d411b97f495291eeb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af01eaed338bcd96ff7018a03daada55b"><td class="memItemLeft" align="right" valign="top"><a id="af01eaed338bcd96ff7018a03daada55b"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSlicer_1_1GPU_1_1ShaderData.html#af01eaed338bcd96ff7018a03daada55b">mIsInit</a></td></tr>
+<tr class="memdesc:af01eaed338bcd96ff7018a03daada55b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Is the buffer data initialized? <br /></td></tr>
+<tr class="separator:af01eaed338bcd96ff7018a03daada55b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Class for managing SSBO. </p>

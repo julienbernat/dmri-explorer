@@ -1,14 +1,6 @@
 var searchData=
 [
-  ['r_61',['r',['../structSlicer_1_1Math_1_1SphericalCoordinates.html#ab6cd82e791fec3918176e978c266a3c8',1,'Slicer::Math::SphericalCoordinates']]],
-  ['registercallback_62',['RegisterCallback',['../classSlicer_1_1ApplicationParameter.html#a86d7a5c63b003332f02681a672318f18',1,'Slicer::ApplicationParameter']]],
-  ['registerstatecallbacks_63',['registerStateCallbacks',['../classSlicer_1_1Model.html#a895bd58524990017263abd00683787bf',1,'Slicer::Model::registerStateCallbacks()'],['../classSlicer_1_1SHField.html#a7fd32d6652cf3175f2c1b93c5f5418af',1,'Slicer::SHField::registerStateCallbacks()']]],
-  ['render_64',['Render',['../classSlicer_1_1Scene.html#aedc6043d293e8817db2561bc47a3814b',1,'Slicer::Scene']]],
-  ['resetcs_65',['resetCS',['../classSlicer_1_1Model.html#a7b01c1a7404f20c744eda3c97172b21c',1,'Slicer::Model']]],
-  ['resetparent_66',['ResetParent',['../classSlicer_1_1CoordinateSystem.html#a7d4acffebc60a6412172a8f7583ab4a3',1,'Slicer::CoordinateSystem']]],
-  ['resize_67',['Resize',['../classSlicer_1_1Camera.html#a5c7a12fe31c6b39d0362db119f036e60',1,'Slicer::Camera']]],
-  ['resolution_68',['Resolution',['../structSlicer_1_1State_1_1Sphere.html#a4d2fd92d94591966a64e41829f02a206',1,'Slicer::State::Sphere']]],
-  ['rotatecs_69',['RotateCS',['../classSlicer_1_1Scene.html#ace9e1da49673d5803e30f147e1168587',1,'Slicer::Scene']]],
-  ['rotationspeed_70',['RotationSpeed',['../structSlicer_1_1State_1_1Window.html#af8acab2a83a635b63d855121634b0973',1,'Slicer::State::Window']]],
-  ['run_71',['Run',['../classSlicer_1_1Application.html#a91a8b916894876ff3c48a04c113691ac',1,'Slicer::Application']]]
+  ['phi_160',['phi',['../structSlicer_1_1Math_1_1SphericalCoordinates.html#a301a27ef9ab41929a85e9033384c4a3b',1,'Slicer::Math::SphericalCoordinates']]],
+  ['printusage_161',['PrintUsage',['../classSlicer_1_1ArgumentParser.html#ab9a1a912a5b01daf82b9a28e14258240',1,'Slicer::ArgumentParser']]],
+  ['programpipeline_162',['ProgramPipeline',['../classSlicer_1_1GPU_1_1ProgramPipeline.html',1,'Slicer::GPU::ProgramPipeline'],['../classSlicer_1_1GPU_1_1ProgramPipeline.html#a0fa432f574507c5f82c9145519613700',1,'Slicer::GPU::ProgramPipeline::ProgramPipeline()=default'],['../classSlicer_1_1GPU_1_1ProgramPipeline.html#a9f633d73202780c52f392f54399bcaae',1,'Slicer::GPU::ProgramPipeline::ProgramPipeline(const std::vector&lt; ShaderProgram &gt; &amp;shaderPrograms)'],['../classSlicer_1_1GPU_1_1ProgramPipeline.html#a0d9ff7ab44803d32e2d0872187224732',1,'Slicer::GPU::ProgramPipeline::ProgramPipeline(const ShaderProgram &amp;shaderProgram)']]]
 ];

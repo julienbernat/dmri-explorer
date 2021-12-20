@@ -1,5 +1,9 @@
 var searchData=
 [
-  ['volumeshape_97',['VolumeShape',['../structSlicer_1_1State_1_1Grid.html#af98b00b0267d190c6defb06a686a03f9',1,'Slicer::State::Grid']]],
-  ['voxelgrid_98',['VoxelGrid',['../classSlicer_1_1ApplicationState.html#a39ff611c9e5d1edac80bb577712092a8',1,'Slicer::ApplicationState']]]
+  ['uimanager_202',['UIManager',['../classSlicer_1_1UIManager.html',1,'Slicer::UIManager'],['../classSlicer_1_1UIManager.html#aeda41826c9042b0e05b7873337fc2348',1,'Slicer::UIManager::UIManager()'],['../classSlicer_1_1UIManager.html#a3543fb07c6322e9f27a442dec95c8d09',1,'Slicer::UIManager::UIManager(GLFWwindow *window, const std::string &amp;glslVersion, const std::shared_ptr&lt; ApplicationState &gt; &amp;state)']]],
+  ['unravelindex3d_203',['unravelIndex3d',['../classSlicer_1_1NiftiImageWrapper.html#a86a4834aa2a7610cc1fbc8cfd8902e59',1,'Slicer::NiftiImageWrapper']]],
+  ['update_204',['Update',['../classSlicer_1_1ApplicationParameter.html#a71bc83cf907c5db00b42ef4d85d5a249',1,'Slicer::ApplicationParameter::Update()'],['../classSlicer_1_1GPU_1_1ShaderData.html#a722a06029fe5ebddadda1c2f05f81681',1,'Slicer::GPU::ShaderData::Update()']]],
+  ['updateapplicationstateatinit_205',['updateApplicationStateAtInit',['../classSlicer_1_1Model.html#a3c548b2a5792c4db5fe349fe9de1e531',1,'Slicer::Model::updateApplicationStateAtInit()'],['../classSlicer_1_1SHField.html#a38d8014fec896b243fa2d8198581f8d1',1,'Slicer::SHField::updateApplicationStateAtInit()']]],
+  ['updategpu_206',['UpdateGPU',['../classSlicer_1_1Camera.html#a64866a86dced6f3cf4f9331272e18be6',1,'Slicer::Camera']]],
+  ['uploadtransformtogpu_207',['uploadTransformToGPU',['../classSlicer_1_1Model.html#a69d01e9ab9cf96bb44758f9400d856e7',1,'Slicer::Model']]]
 ];

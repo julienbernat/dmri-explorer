@@ -68,6 +68,7 @@ $(function() {
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="classSlicer_1_1NiftiImageWrapper-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">Slicer::NiftiImageWrapper Class Reference</div>  </div>
@@ -107,6 +108,25 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a1579d2afd885fc4adfd4661864c2e3ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9c9712c92fd7e6210f0fd3cf6843e272"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSlicer_1_1NiftiImageWrapper.html#a9c9712c92fd7e6210f0fd3cf6843e272">at</a> (uint i, uint j, uint k, uint l) const</td></tr>
 <tr class="separator:a9c9712c92fd7e6210f0fd3cf6843e272"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:af0b9441c177f9af2dcc0c509c2ba95ea"><td class="memItemLeft" align="right" valign="top"><a id="af0b9441c177f9af2dcc0c509c2ba95ea"></a>
+std::shared_ptr&lt; nifti_image &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSlicer_1_1NiftiImageWrapper.html#af0b9441c177f9af2dcc0c509c2ba95ea">mImage</a></td></tr>
+<tr class="memdesc:af0b9441c177f9af2dcc0c509c2ba95ea"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reference to the loaded image. <br /></td></tr>
+<tr class="separator:af0b9441c177f9af2dcc0c509c2ba95ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa7061a0a6c57419949096e45a8df48ce"><td class="memItemLeft" align="right" valign="top"><a id="aa7061a0a6c57419949096e45a8df48ce"></a>
+glm::ivec4&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSlicer_1_1NiftiImageWrapper.html#aa7061a0a6c57419949096e45a8df48ce">mDims</a></td></tr>
+<tr class="memdesc:aa7061a0a6c57419949096e45a8df48ce"><td class="mdescLeft">&#160;</td><td class="mdescRight">Dimensions of the image. <br /></td></tr>
+<tr class="separator:aa7061a0a6c57419949096e45a8df48ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aca5d3d00b85eda5549e8c416eabb6468"><td class="memItemLeft" align="right" valign="top"><a id="aca5d3d00b85eda5549e8c416eabb6468"></a>
+uint&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSlicer_1_1NiftiImageWrapper.html#aca5d3d00b85eda5549e8c416eabb6468">mNbVox</a></td></tr>
+<tr class="memdesc:aca5d3d00b85eda5549e8c416eabb6468"><td class="mdescLeft">&#160;</td><td class="mdescRight">Total number of voxels. <br /></td></tr>
+<tr class="separator:aca5d3d00b85eda5549e8c416eabb6468"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a668a5ffee63ef931bf86835abf3630a6"><td class="memItemLeft" align="right" valign="top"><a id="a668a5ffee63ef931bf86835abf3630a6"></a>
+uint&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSlicer_1_1NiftiImageWrapper.html#a668a5ffee63ef931bf86835abf3630a6">mLength</a></td></tr>
+<tr class="memdesc:a668a5ffee63ef931bf86835abf3630a6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Length of the image (number of scalar values). <br /></td></tr>
+<tr class="separator:a668a5ffee63ef931bf86835abf3630a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Class wrapping a nifti_image object. </p>
