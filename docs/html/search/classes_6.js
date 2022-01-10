@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['programpipeline_246',['ProgramPipeline',['../classSlicer_1_1GPU_1_1ProgramPipeline.html',1,'Slicer::GPU']]]
+  ['niftiimagewrapper_257',['NiftiImageWrapper',['../classSlicer_1_1NiftiImageWrapper.html',1,'Slicer']]]
 ];

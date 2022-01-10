@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['window_256',['Window',['../structSlicer_1_1State_1_1Window.html',1,'Slicer::State']]]
+  ['uimanager_267',['UIManager',['../classSlicer_1_1UIManager.html',1,'Slicer']]]
 ];

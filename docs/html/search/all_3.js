@@ -11,6 +11,5 @@ var searchData=
   ['drawpreferenceswindow_35',['drawPreferencesWindow',['../classSlicer_1_1UIManager.html#abb963f8a74e4cd510eb8429f43b54a5b',1,'Slicer::UIManager']]],
   ['drawslicerswindow_36',['drawSlicersWindow',['../classSlicer_1_1UIManager.html#a401df9b3e304c7b4c475c98c9ef6fe27',1,'Slicer::UIManager']]],
   ['drawspecific_37',['drawSpecific',['../classSlicer_1_1Model.html#ac196286d08715e9f0b77ec28c6d0a7e1',1,'Slicer::Model::drawSpecific()'],['../classSlicer_1_1SHField.html#ac786440d1d3bd2433ebe9d02bf8fdcb5',1,'Slicer::SHField::drawSpecific()']]],
-  ['dtype_38',['dtype',['../classSlicer_1_1NiftiImageWrapper.html#a7b3063ef20c83738eaea47f77230caf2',1,'Slicer::NiftiImageWrapper']]],
-  ['dmri_2dexplorer_20_3a_20a_20diffusion_20mri_20visualization_20application_39',['dmri-explorer : A Diffusion MRI Visualization Application',['../index.html',1,'']]]
+  ['dtype_38',['dtype',['../classSlicer_1_1NiftiImageWrapper.html#a7b3063ef20c83738eaea47f77230caf2',1,'Slicer::NiftiImageWrapper']]]
 ];

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['model_244',['Model',['../classSlicer_1_1Model.html',1,'Slicer']]]
+  ['image2d_255',['Image2D',['../classSlicer_1_1Image2D.html',1,'Slicer']]]
 ];

@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.17"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>dmri-explorer: dmri-explorer : A Diffusion MRI Visualization Application</title>
+<title>dmri-explorer: Main Page</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -63,44 +63,48 @@ $(function() {
 
 <div class="PageDoc"><div class="header">
   <div class="headertitle">
-<div class="title">dmri-explorer : A Diffusion MRI Visualization Application </div>  </div>
+<div class="title">dmri-explorer Documentation</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><p>A real-time diffusion MRI slicing application for Linux using <code>OpenGL 4.6</code>. It can visualize spherical functions expressed as a series of spherical harmonics coefficients in DIPY's <code>descoteaux07</code> legacy real symmetric or full SH basis (See <a href="https://dipy.org/documentation/1.4.1./theory/sh_basis/">this link</a> for more details.).</p>
-<h1><a class="anchor" id="autotoc_md1"></a>
-CDMRI'21</h1>
-<p>The software is presented as part of the CDMRI'21 workshop. It has however evolved since then and will keep getting better over time. For the performances reported at the workshop, please refer to the release <a href="https://github.com/scilus/dmri-explorer/releases/tag/v0.1">v0.1</a>. However, <b>we highly encourage the user to use the latest version of the application</b> on the <code>main</code> branch, as efforts have been made to lower GPU and CPU memory usage.</p>
-<h1><a class="anchor" id="autotoc_md2"></a>
-Installation</h1>
+<div class="textblock"><p><img src="banner-logo.png" alt="Banner logo" class="inline"/> </p>
+<h1><a class="anchor" id="autotoc_md0"></a>
+dmri-explorer : A Diffusion MRI Visualization Application</h1>
+<p>A real-time diffusion MRI slicing application for Linux using <code>OpenGL 4.6</code>. It can visualize spherical functions expressed as a series of spherical harmonics coefficients in DIPY's <code>descoteaux07</code> legacy real symmetric or full SH basis (See <a href="https://dipy.org/documentation/1.4.1./theory/sh_basis/">this link</a> for more details.).</p>
+<h2><a class="anchor" id="autotoc_md1"></a>
+Installation</h2>
 <p><code>Cmake</code> minimum version 3.11 is required for installing the application. The generator used by default is <code>GNU Make</code>. Make sure you have <code>git</code> installed; it is used for fetching the <a href="https://github.com/NIFTI-Imaging/nifti_clib"><code>nifticlib</code> library</a>.</p>
-<h2><a class="anchor" id="autotoc_md3"></a>
-Quick installation</h2>
+<h3><a class="anchor" id="autotoc_md2"></a>
+Quick installation</h3>
 <p>The program can be installed by running: </p><div class="fragment"><div class="line">./install.sh</div>
-</div><!-- fragment --><p>The above script creates the build directory, runs <code>Cmake</code> and <code>make</code> and add the executable path the system <code>PATH</code>.</p>
-<h2><a class="anchor" id="autotoc_md4"></a>
-Step-by-step installation</h2>
+</div><!-- fragment --><p>The above script creates the build directory, runs <code>Cmake</code> and <code>make</code>. The executable file will be in the folder <code>${project_root}/build/Engine</code>.</p>
+<h3><a class="anchor" id="autotoc_md3"></a>
+Step-by-step installation</h3>
 <p>Alternatively, the program can be built by running: </p><div class="fragment"><div class="line">mkdir build</div>
 <div class="line">cd build</div>
 <div class="line">cmake ..</div>
 <div class="line">make</div>
 </div><!-- fragment --><p>The executable file will be in the folder <code>${project_root}/build/Engine</code>.</p>
-<p>Then you can add the path to the directory containing the executable to your <code>.bashrc</code> configuration to make it available system-wide.</p>
+<h3><a class="anchor" id="autotoc_md4"></a>
+Adding to &lt;tt&gt;path&lt;/tt&gt;</h3>
+<p>Once the program is built, you can add the path to the directory containing the executable to your <code>.bashrc</code> configuration to make it available system-wide.</p>
 <div class="fragment"><div class="line">export PATH=&#39;${absolute_path_to_project}/build/Engine&#39;:$PATH</div>
-</div><!-- fragment --><h1><a class="anchor" id="autotoc_md5"></a>
-Running the application</h1>
+</div><!-- fragment --><h2><a class="anchor" id="autotoc_md5"></a>
+Running the application</h2>
 <p>To run the executable: </p><div class="fragment"><div class="line">dmriexplorer path/to/image.nii.gz</div>
-</div><!-- fragment --><h1><a class="anchor" id="autotoc_md6"></a>
-How to cite</h1>
-<p>If you enjoy this application, please consider citing the following work. </p><div class="fragment"><div class="line">Poirier C., Descoteaux M., Gilet G. (2021) Accelerating Geometry-Based Spherical Harmonics Glyphs Rendering for dMRI Using Modern OpenGL. In: Cetin-Karayumak S. et al. (eds) Computational Diffusion MRI. CDMRI 2021. Lecture Notes in Computer Science, vol 13006. Springer, Cham. https://doi.org/10.1007/978-3-030-87615-9_13</div>
-</div><!-- fragment --><h1><a class="anchor" id="autotoc_md7"></a>
-Contributing</h1>
+</div><!-- fragment --><h2><a class="anchor" id="autotoc_md6"></a>
+How to cite</h2>
+<p>The software has been presented as part of the CDMRI'21 workshop. It has however evolved since then and will keep getting better over time. For the performances reported at the workshop, please refer to the release <a href="https://github.com/scilus/dmri-explorer/releases/tag/v0.1">v0.1</a>. However, <b>we highly encourage the user to use the latest version of the application</b> on the <code>main</code> branch, as efforts have been made to lower GPU and CPU memory usage.</p>
+<p><b>If you enjoy this application, please consider citing the following work:</b></p>
+<p><em>Poirier C., Descoteaux M., Gilet G. (2021) Accelerating Geometry-Based Spherical Harmonics Glyphs Rendering for dMRI Using Modern OpenGL. In: Cetin-Karayumak S. et al. (eds) Computational Diffusion MRI. CDMRI 2021. Lecture Notes in Computer Science, vol 13006. Springer, Cham. <a href="https://doi.org/10.1007/978-3-030-87615-9_13">https://doi.org/10.1007/978-3-030-87615-9_13</a></em></p>
+<h2><a class="anchor" id="autotoc_md7"></a>
+Contributing</h2>
 <p>Contributions are welcome and encouraged:</p><ul>
-<li>If you discover bugs (installation problems, in-app bugs, etc.), please <a href="https://github.com/scilus/dmri-explorer/issues">raise an issue</a> describing the error and the steps to reproduce it;</li>
-<li>If you have a feature request, you are also encouraged to raise an issue describing your need;</li>
-<li>Pull-requests are also welcome!</li>
+<li>If you discover bugs (installation problems, in-app bugs, etc.), please <a href="https://github.com/scilus/dmri-explorer/issues">open an issue</a> describing the error and the steps to reproduce it;</li>
+<li>If you have a feature request, you are also encouraged to open an issue describing your need;</li>
+<li>Pull-requests are of course welcome!</li>
 </ul>
-<h1><a class="anchor" id="autotoc_md8"></a>
-Documentation</h1>
+<h2><a class="anchor" id="autotoc_md8"></a>
+Documentation</h2>
 <p>The repository's <a href="https://scilus.github.io/dmri-explorer/html/index.html">website</a> contains up-to-date documentation on the code generated with Doxygen. </p>
 </div></div><!-- PageDoc -->
 </div><!-- contents -->
