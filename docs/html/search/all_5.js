@@ -13,7 +13,8 @@ var searchData=
   ['getorderslist_54',['GetOrdersList',['../classSlicer_1_1Primitive_1_1Sphere.html#a06294eb9a31ab436289d79a0fbc55693',1,'Slicer::Primitive::Sphere']]],
   ['getpoints_55',['GetPoints',['../classSlicer_1_1Primitive_1_1Sphere.html#af3914727753fd1dc4b57b6546d1875cc',1,'Slicer::Primitive::Sphere']]],
   ['getshfuncs_56',['GetSHFuncs',['../classSlicer_1_1Primitive_1_1Sphere.html#a10564789919b1fc79f0d3895d1cebd73',1,'Slicer::Primitive::Sphere']]],
-  ['getsphereresolution_57',['GetSphereResolution',['../classSlicer_1_1ArgumentParser.html#a00d60a7fcf566caa248915e50add66e1',1,'Slicer::ArgumentParser']]],
-  ['grid_58',['Grid',['../structSlicer_1_1State_1_1Grid.html',1,'Slicer::State::Grid'],['../structSlicer_1_1State_1_1Grid.html#ad4ceb870eedc14cc2ee9c3f71f003ddb',1,'Slicer::State::Grid::Grid()']]],
-  ['griddata_59',['GridData',['../structSlicer_1_1SHField_1_1GridData.html',1,'Slicer::SHField']]]
+  ['getshfuncsgrad_57',['GetSHFuncsGrad',['../classSlicer_1_1Primitive_1_1Sphere.html#aa0d90c188b32fba1f9d2dfde23a4bd1f',1,'Slicer::Primitive::Sphere']]],
+  ['getsphereresolution_58',['GetSphereResolution',['../classSlicer_1_1ArgumentParser.html#a00d60a7fcf566caa248915e50add66e1',1,'Slicer::ArgumentParser']]],
+  ['grid_59',['Grid',['../structSlicer_1_1State_1_1Grid.html',1,'Slicer::State::Grid'],['../structSlicer_1_1State_1_1Grid.html#ad4ceb870eedc14cc2ee9c3f71f003ddb',1,'Slicer::State::Grid::Grid()']]],
+  ['griddata_60',['GridData',['../structSlicer_1_1SHField_1_1GridData.html',1,'Slicer::SHField']]]
 ];

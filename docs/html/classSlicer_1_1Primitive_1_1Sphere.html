@@ -99,6 +99,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:af3914727753fd1dc4b57b6546d1875cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a10564789919b1fc79f0d3895d1cebd73"><td class="memItemLeft" align="right" valign="top">std::vector&lt; float &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSlicer_1_1Primitive_1_1Sphere.html#a10564789919b1fc79f0d3895d1cebd73">GetSHFuncs</a> () const</td></tr>
 <tr class="separator:a10564789919b1fc79f0d3895d1cebd73"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa0d90c188b32fba1f9d2dfde23a4bd1f"><td class="memItemLeft" align="right" valign="top">std::vector&lt; glm::vec4 &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSlicer_1_1Primitive_1_1Sphere.html#aa0d90c188b32fba1f9d2dfde23a4bd1f">GetSHFuncsGrad</a> () const</td></tr>
+<tr class="separator:aa0d90c188b32fba1f9d2dfde23a4bd1f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab5a4972cc2b37f199b7a476b4f2711d8"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSlicer_1_1Primitive_1_1Sphere.html#ab5a4972cc2b37f199b7a476b4f2711d8">GetMaxSHOrder</a> () const</td></tr>
 <tr class="separator:ab5a4972cc2b37f199b7a476b4f2711d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a06294eb9a31ab436289d79a0fbc55693"><td class="memItemLeft" align="right" valign="top">std::vector&lt; float &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSlicer_1_1Primitive_1_1Sphere.html#a06294eb9a31ab436289d79a0fbc55693">GetOrdersList</a> () const</td></tr>
@@ -135,6 +137,10 @@ std::vector&lt; GLuint &gt;&#160;</td><td class="memItemRight" valign="bottom"><
 std::vector&lt; float &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSlicer_1_1Primitive_1_1Sphere.html#a1b9cc51cf59fb210bf28b636295dc397">mSphHarmFunc</a></td></tr>
 <tr class="memdesc:a1b9cc51cf59fb210bf28b636295dc397"><td class="mdescLeft">&#160;</td><td class="mdescRight">SH functions at each point in mPoints. <br /></td></tr>
 <tr class="separator:a1b9cc51cf59fb210bf28b636295dc397"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2e21209a40032fd129865fb8853f8795"><td class="memItemLeft" align="right" valign="top"><a id="a2e21209a40032fd129865fb8853f8795"></a>
+std::vector&lt; glm::vec4 &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSlicer_1_1Primitive_1_1Sphere.html#a2e21209a40032fd129865fb8853f8795">mSphHarmFuncGrad</a></td></tr>
+<tr class="memdesc:a2e21209a40032fd129865fb8853f8795"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gradients of SH functions at each point in mPoints. <br /></td></tr>
+<tr class="separator:a2e21209a40032fd129865fb8853f8795"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a31b821754925d89c3837d3576b352b1b"><td class="memItemLeft" align="right" valign="top"><a id="a31b821754925d89c3837d3576b352b1b"></a>
 std::shared_ptr&lt; <a class="el" href="classSlicer_1_1SH_1_1DescoteauxBasis.html">SH::DescoteauxBasis</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSlicer_1_1Primitive_1_1Sphere.html#a31b821754925d89c3837d3576b352b1b">mSHBasis</a></td></tr>
 <tr class="memdesc:a31b821754925d89c3837d3576b352b1b"><td class="mdescLeft">&#160;</td><td class="mdescRight">SH basis in use. <br /></td></tr>
@@ -230,7 +236,7 @@ unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Add a point to the sphere. </p><dl class="params"><dt>Parameters</dt><dd>
+<p>Add a point to the sphere. Also adds the SH functions and gradients evaluated for this point. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">cartesian</td><td>Point to add, expressed in cartesian coordinates </td></tr>
   </table>
@@ -450,6 +456,32 @@ unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 </table>
 </div><div class="memdoc">
 <p>Get the SH function at each sphere point. </p><dl class="section return"><dt>Returns</dt><dd>Vector of SH functions. </dd></dl>
+
+</div>
+</div>
+<a id="aa0d90c188b32fba1f9d2dfde23a4bd1f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa0d90c188b32fba1f9d2dfde23a4bd1f">&#9670;&nbsp;</a></span>GetSHFuncsGrad()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;glm::vec4&gt; Slicer::Primitive::Sphere::GetSHFuncsGrad </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Get the gradient of SH functions at each sphere point. </p><dl class="section return"><dt>Returns</dt><dd>Vector of SH functions gradients. </dd></dl>
 
 </div>
 </div>
