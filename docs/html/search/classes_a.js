@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['uimanager_267',['UIManager',['../classSlicer_1_1UIManager.html',1,'Slicer']]]
+  ['uimanager_271',['UIManager',['../classSlicer_1_1UIManager.html',1,'Slicer']]]
 ];

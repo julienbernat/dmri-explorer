@@ -129,10 +129,6 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
-<tr class="memitem:a17bc48ad7e36ee41d89c588a78149660"><td class="memItemLeft" align="right" valign="top"><a id="a17bc48ad7e36ee41d89c588a78149660"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSlicer_1_1SHField.html#a17bc48ad7e36ee41d89c588a78149660">scaleSpheres</a> ()</td></tr>
-<tr class="memdesc:a17bc48ad7e36ee41d89c588a78149660"><td class="mdescLeft">&#160;</td><td class="mdescRight">Scale spheres by launching a compute shader pass. <br /></td></tr>
-<tr class="separator:a17bc48ad7e36ee41d89c588a78149660"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac786440d1d3bd2433ebe9d02bf8fdcb5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSlicer_1_1SHField.html#ac786440d1d3bd2433ebe9d02bf8fdcb5">drawSpecific</a> () override</td></tr>
 <tr class="separator:ac786440d1d3bd2433ebe9d02bf8fdcb5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a38d8014fec896b243fa2d8198581f8d1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSlicer_1_1SHField.html#a38d8014fec896b243fa2d8198581f8d1">updateApplicationStateAtInit</a> () override</td></tr>
@@ -176,6 +172,14 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <tr class="memitem:ae64473a0e5ae6ef6b990a4afc2ca5ec6"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
 <tr class="memitem:ae64473a0e5ae6ef6b990a4afc2ca5ec6"><td class="memTemplItemLeft" align="right" valign="top">GLuint&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classSlicer_1_1SHField.html#ae64473a0e5ae6ef6b990a4afc2ca5ec6">genVBO</a> (const std::vector&lt; T &gt; &amp;data) const</td></tr>
 <tr class="separator:ae64473a0e5ae6ef6b990a4afc2ca5ec6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae74bb9596e1b7c775e2b4d5836b7526c"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSlicer_1_1SHField.html#ae74bb9596e1b7c775e2b4d5836b7526c">getMaxNbSpheres</a> () const</td></tr>
+<tr class="separator:ae74bb9596e1b7c775e2b4d5836b7526c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a17bc48ad7e36ee41d89c588a78149660"><td class="memItemLeft" align="right" valign="top"><a id="a17bc48ad7e36ee41d89c588a78149660"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSlicer_1_1SHField.html#a17bc48ad7e36ee41d89c588a78149660">scaleSpheres</a> ()</td></tr>
+<tr class="memdesc:a17bc48ad7e36ee41d89c588a78149660"><td class="mdescLeft">&#160;</td><td class="mdescRight">Scale spheres by launching a compute shader pass. <br /></td></tr>
+<tr class="separator:a17bc48ad7e36ee41d89c588a78149660"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3ccd31228acacce245bb62a8b1294e2d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSlicer_1_1SHField.html#a3ccd31228acacce245bb62a8b1294e2d">scaleSpheres</a> (unsigned int sliceId, unsigned int nbSpheres)</td></tr>
+<tr class="separator:a3ccd31228acacce245bb62a8b1294e2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
@@ -187,10 +191,22 @@ std::mutex&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href
 std::shared_ptr&lt; <a class="el" href="classSlicer_1_1Primitive_1_1Sphere.html">Primitive::Sphere</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSlicer_1_1SHField.html#a845859c6c1de766d731051fed14abba9">mSphere</a></td></tr>
 <tr class="memdesc:a845859c6c1de766d731051fed14abba9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sphere used for SH projection. <br /></td></tr>
 <tr class="separator:a845859c6c1de766d731051fed14abba9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ace80f92802924ad7479a2a282df83822"><td class="memItemLeft" align="right" valign="top"><a id="ace80f92802924ad7479a2a282df83822"></a>
-uint&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSlicer_1_1SHField.html#ace80f92802924ad7479a2a282df83822">mNbSpheres</a></td></tr>
-<tr class="memdesc:ace80f92802924ad7479a2a282df83822"><td class="mdescLeft">&#160;</td><td class="mdescRight">Maximum number of spheres rendered. <br /></td></tr>
-<tr class="separator:ace80f92802924ad7479a2a282df83822"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8330fc1227b5b70dea38048245d128bb"><td class="memItemLeft" align="right" valign="top"><a id="a8330fc1227b5b70dea38048245d128bb"></a>
+uint&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSlicer_1_1SHField.html#a8330fc1227b5b70dea38048245d128bb">mNbSpheresX</a></td></tr>
+<tr class="memdesc:a8330fc1227b5b70dea38048245d128bb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Maximum number of spheres rendered in X-plane. <br /></td></tr>
+<tr class="separator:a8330fc1227b5b70dea38048245d128bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a07f34a320a3a6b6fbf647b967b3585e0"><td class="memItemLeft" align="right" valign="top"><a id="a07f34a320a3a6b6fbf647b967b3585e0"></a>
+uint&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSlicer_1_1SHField.html#a07f34a320a3a6b6fbf647b967b3585e0">mNbSpheresY</a></td></tr>
+<tr class="memdesc:a07f34a320a3a6b6fbf647b967b3585e0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Maximum number of spheres rendered in Y-plane. <br /></td></tr>
+<tr class="separator:a07f34a320a3a6b6fbf647b967b3585e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af221106ee685572e0b56e0b2b2f2ceb1"><td class="memItemLeft" align="right" valign="top"><a id="af221106ee685572e0b56e0b2b2f2ceb1"></a>
+uint&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSlicer_1_1SHField.html#af221106ee685572e0b56e0b2b2f2ceb1">mNbSpheresZ</a></td></tr>
+<tr class="memdesc:af221106ee685572e0b56e0b2b2f2ceb1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Maximum number of spheres rendered in Z-plane. <br /></td></tr>
+<tr class="separator:af221106ee685572e0b56e0b2b2f2ceb1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a174bdbfa389e5a8cf2ce633846947300"><td class="memItemLeft" align="right" valign="top"><a id="a174bdbfa389e5a8cf2ce633846947300"></a>
+glm::bvec3&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSlicer_1_1SHField.html#a174bdbfa389e5a8cf2ce633846947300">mIsSliceDirty</a></td></tr>
+<tr class="memdesc:a174bdbfa389e5a8cf2ce633846947300"><td class="mdescLeft">&#160;</td><td class="mdescRight">Indicates what slices need to be computed. <br /></td></tr>
+<tr class="separator:a174bdbfa389e5a8cf2ce633846947300"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae207256f59c7756867e2ef1f3b38c841"><td class="memItemLeft" align="right" valign="top"><a id="ae207256f59c7756867e2ef1f3b38c841"></a>
 std::vector&lt; GLuint &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSlicer_1_1SHField.html#ae207256f59c7756867e2ef1f3b38c841">mIndices</a></td></tr>
 <tr class="memdesc:ae207256f59c7756867e2ef1f3b38c841"><td class="mdescLeft">&#160;</td><td class="mdescRight">Mesh triangulation for all spheres. <br /></td></tr>
@@ -473,6 +489,32 @@ template&lt;typename T &gt; </div>
 
 </div>
 </div>
+<a id="ae74bb9596e1b7c775e2b4d5836b7526c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae74bb9596e1b7c775e2b4d5836b7526c">&#9670;&nbsp;</a></span>getMaxNbSpheres()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned int Slicer::SHField::getMaxNbSpheres </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Get the maximum number of spheres rendered. </p><dl class="section return"><dt>Returns</dt><dd>The maximum number of spheres rendered. </dd></dl>
+
+</div>
+</div>
 <a id="ac4fdd4474bd20f8f73cd318acde81fca"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ac4fdd4474bd20f8f73cd318acde81fca">&#9670;&nbsp;</a></span>initializeMembers()</h2>
 
@@ -597,6 +639,49 @@ template&lt;typename T &gt; </div>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="classSlicer_1_1Model.html#a895bd58524990017263abd00683787bf">Model::registerStateCallbacks()</a> </dd></dl>
 
 <p>Implements <a class="el" href="classSlicer_1_1Model.html#a895bd58524990017263abd00683787bf">Slicer::Model</a>.</p>
+
+</div>
+</div>
+<a id="a3ccd31228acacce245bb62a8b1294e2d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3ccd31228acacce245bb62a8b1294e2d">&#9670;&nbsp;</a></span>scaleSpheres()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Slicer::SHField::scaleSpheres </td>
+          <td>(</td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>sliceId</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>nbSpheres</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Scale spheres for a single slice. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">sliceId</td><td>Index of the slice to scale. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">nbSpheres</td><td>Number of spheres for the slice of interest. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
